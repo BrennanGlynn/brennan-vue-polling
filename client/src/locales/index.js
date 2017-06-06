@@ -16,7 +16,7 @@ const locales = {
 Vue.use(VueI18n)
 
 Vue.config.lang = lang
-Vue.config.fallbackLang = 'zh-CN'
+Vue.config.fallbackLang = 'en'
 
 // set locales
 Object.keys(locales).forEach(lang => {

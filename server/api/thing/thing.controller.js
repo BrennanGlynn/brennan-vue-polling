@@ -12,7 +12,7 @@
 var _ = require('lodash')
 var Thing = require('./thing.model')
 
-// Get list of things
+// Get list of polls
 exports.index = function (req, res) {
   Thing.find(function (err, things) {
     if (err) {
