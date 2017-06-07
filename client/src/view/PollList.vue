@@ -15,10 +15,11 @@
           <i class="el-icon-edit icon" @click="editPoll(poll)"></i>
         </div>
         <p>
-          {{poll.author}}
+          Poll by {{poll.author}}
         </p>
-        <p v-for="option in poll.options">{{option.option}}-{{option.votes}}</p>
-
+        <div v-for="option in poll.options" class="item">
+          {{ option.option }} {{ option.votes }}
+        </div>
       </el-card>
     </div>
     <el-dialog :title="form._id ? $t('poll.edit.update') : $t('poll.edit.create')" v-model="formVisible">
@@ -73,7 +74,8 @@
           author: [{ required: true, message: this.$t('poll.rules.author'), trigger: 'blur' }],
           options: [{ type: 'array', required: true, message: this.$t('poll.rules.options'), trigger: 'change' }]
         },
-        polls: []
+        polls: [],
+        radio: ''
       }
     },
     methods: {
@@ -152,11 +154,13 @@
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/variable"
+  .item
+    padding: 5px 0
   .box-card
     display inline-block
     width 20rem
-    height 15rem
-    margin .5rem
+    height 25em
+    margin 1rem
     .icon
       float right
       margin-left .5rem

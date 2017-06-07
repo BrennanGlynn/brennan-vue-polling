@@ -39,11 +39,11 @@ export default {
       err: 'Error occured when saving!'
     },
     error: 'Error',
-    created: 'Create succeeded',
+    created: 'Create successful',
     createFailed: 'Create failed',
-    updated: 'Update succeeded',
+    updated: 'Update successful',
     updateFailed: 'Update failed',
-    removed: 'Delete succeeded',
+    removed: 'Delete successful',
     removeFailed: 'Delete failed'
   },
   http: {
