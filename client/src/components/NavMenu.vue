@@ -5,6 +5,7 @@
       <el-menu :default-active="$route.path" theme="dark" :router="true">
         <el-menu-item index="/users">{{$t('menu.users')}}</el-menu-item>
         <el-menu-item index="/things">{{$t('menu.things')}}</el-menu-item>
+        <el-menu-item index="/polls">{{$t('menu.polls')}}</el-menu-item>
       </el-menu>
     </div>
   </transition>
@@ -13,12 +14,14 @@
 import { mapGetters } from 'vuex'
 import locales from 'locales/menu'
 import { Menu, Submenu, MenuItem, MenuItemGroup } from 'element-ui'
+import ElMenuItem from '../../../node_modules/element-ui/packages/menu/src/menu-item'
 export default {
   locales,
   computed: {
     ...mapGetters(['loggedIn'])
   },
   components: {
+    ElMenuItem,
     [Menu.name]: Menu,
     [Submenu.name]: Submenu,
     [MenuItem.name]: MenuItem,

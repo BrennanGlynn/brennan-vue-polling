@@ -1,6 +1,7 @@
 export default {
   menu: {
     users: 'Users',
-    things: 'Things'
+    things: 'Things',
+    polls: 'Polls'
   }
 }

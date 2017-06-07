@@ -13,4 +13,9 @@ export default [{
   component: (resolve) => {
     import('../view/ThingList.vue').then(resolve)
   }
+}, {
+  path: '/polls',
+  component: (resolve) => {
+    import('../view/PollList.vue').then(resolve)
+  }
 }]

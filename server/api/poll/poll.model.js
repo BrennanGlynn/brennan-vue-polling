@@ -4,7 +4,6 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const OptionSchema = new Schema({
-  _id: false,
   option: { type: String, required: true },
   votes: { type: Number, default: 0 }
 })

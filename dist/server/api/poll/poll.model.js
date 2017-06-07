@@ -4,7 +4,6 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var OptionSchema = new Schema({
-  _id: false,
   option: { type: String, required: true },
   votes: { type: Number, default: 0 }
 });

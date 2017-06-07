@@ -17,6 +17,8 @@
         <p>
           {{poll.author}}
         </p>
+        <p v-for="option in poll.options">{{option.option}}-{{option.votes}}</p>
+
       </el-card>
     </div>
     <el-dialog :title="form._id ? $t('poll.edit.update') : $t('poll.edit.create')" v-model="formVisible">
@@ -24,13 +26,22 @@
         <el-form-item :label="$t('poll.model.name')" prop="name">
           <el-input v-model="form.name"></el-input>
         </el-form-item>
-        <el-form-item :label="$t('poll.model.description')">
-          <el-input v-model="form.info"></el-input>
+        <el-form-item :label="$t('poll.model.author')">
+          <el-input v-model='form.author'></el-input>
         </el-form-item>
-        <!--TODO: Add the rest of the poll option inputs-->
+        <el-form-item
+          v-for="(option, index) in form.options"
+          :key="option._id"
+          :rules="{
+          	required: true, message: 'Option cannot be null', trigger: 'blur'
+          }"
+        >
+          <el-input v-model="option.option"><el-button slot="append" @click.prevent="removeOption(option)">Delete</el-button></el-input>
+        </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
         <el-button @click.native="cancelForm">{{$t('confirm.cancel')}}</el-button>
+        <el-button @click.native="addOption">{{$t('poll.edit.addOption')}}</el-button>
         <el-button type="primary" @click.native="saveForm">{{$t('confirm.ok')}}</el-button>
       </span>
     </el-dialog>
@@ -39,7 +50,14 @@
 <script>
   import { poll as pollRes } from 'resources'
   import locales from 'locales/polls'
+  import ElButton from '../../../node_modules/element-ui/packages/button/src/button'
+  import ElFormItem from '../../../node_modules/element-ui/packages/form/src/form-item'
+  import ElInput from '../../../node_modules/element-ui/packages/input/src/input'
   export default {
+    components: {
+      ElInput,
+      ElFormItem,
+      ElButton },
     locales,
     data () {
       return {
@@ -47,11 +65,13 @@
         form: {
           _id: '',
           name: '',
-          author: 'N/A',
+          author: '',
           options: []
         },
         rules: {
-          name: [{ required: true, message: this.$t('thing.rules.name'), trigger: 'blur' }]
+          name: [{ required: true, message: this.$t('poll.rules.name'), trigger: 'blur' }],
+          author: [{ required: true, message: this.$t('poll.rules.author'), trigger: 'blur' }],
+          options: [{ type: 'array', required: true, message: this.$t('poll.rules.options'), trigger: 'change' }]
         },
         polls: []
       }
@@ -64,25 +84,36 @@
           console.error(err)
         })
       },
-      createThing () {
+      addOption () {
+        this.form.options.push({ 'option': '' })
+      },
+      removeOption (option) {
+        const index = this.form.options.indexOf(option)
+        if (index !== -1) {
+          this.form.options.splice(index, 1)
+        }
+      },
+      createPoll () {
         this.formVisible = true
       },
       cancelForm () {
         this.form._id = ''
         this.form.name = ''
-        this.form.info = ''
+        this.form.author = ''
+        this.form.options = []
         this.formVisible = false
       },
       saveForm () {
-        this.$refs.thing.validate(valid => {
+        this.$refs.poll.validate(valid => {
           if (valid) {
             let promise
             if (this.form._id) {
-              promise = thingRes.update({ _id: this.form._id }, this.form)
+              promise = pollRes.update({ _id: this.form._id }, this.form)
             } else {
-              promise = thingRes.save({}, {
+              promise = pollRes.save({}, {
                 name: this.form.name,
-                info: this.form.info
+                author: this.form.author,
+                options: this.form.options
               })
             }
             promise.then(() => {
@@ -96,15 +127,15 @@
           }
         })
       },
-      editThing (thing) {
-        Object.assign(this.form, thing)
+      editPoll (poll) {
+        Object.assign(this.form, poll)
         this.formVisible = true
       },
-      deleteThing (thing) {
-        this.$confirm(`This action will remove the selected thing: ${thing.name} forever, still going on?`, this.$t('confirm.title'), {
+      deletePoll (poll) {
+        this.$confirm(`This action will remove the selected poll: ${poll.name} Do you still want to continue?`, this.$t('confirm.title'), {
           type: 'warning'
         }).then(() => {
-          thingRes.delete({ _id: thing._id }).then(() => {
+          pollRes.delete({ _id: poll._id }).then(() => {
             this.$message({
               type: 'success',
               message: this.$t('message.removed')
