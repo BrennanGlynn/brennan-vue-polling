@@ -8,7 +8,7 @@
       <el-button type="primary" icon="plus" @click.native="createPoll">{{$t('operation.create')}}</el-button>
     </div>
     <div>
-      <el-card class="box-card" v-for="poll in polls" :key="poll._id">
+      <el-card :class="{ownPoll: isOwner(poll)}" class="box-card" v-for="poll in polls" :key="poll._id">
         <div slot="header" class="clearfix">
           <span>{{poll.name}}</span>
           <i class="el-icon-delete icon" @click="deletePoll(poll)"></i>
@@ -26,9 +26,6 @@
       <el-form :model="form" :rules="rules" ref="poll">
         <el-form-item :label="$t('poll.model.name')" prop="name">
           <el-input v-model="form.name"></el-input>
-        </el-form-item>
-        <el-form-item :label="$t('poll.model.author')">
-          <el-input v-model='form.author'></el-input>
         </el-form-item>
         <el-form-item
           v-for="(option, index) in form.options"
@@ -49,6 +46,7 @@
   </content-module>
 </template>
 <script>
+  import { mapGetters } from 'vuex'
   import { poll as pollRes } from 'resources'
   import locales from 'locales/polls'
   import ElButton from '../../../node_modules/element-ui/packages/button/src/button'
@@ -67,7 +65,7 @@
           _id: '',
           name: '',
           author: '',
-          options: []
+          options: [{ option: '' }, { option: '' }]
         },
         rules: {
           name: [{ required: true, message: this.$t('poll.rules.name'), trigger: 'blur' }],
@@ -77,6 +75,11 @@
         polls: [],
         radio: ''
       }
+    },
+    computed: {
+      ...mapGetters([
+        'username'
+      ])
     },
     methods: {
       fetch () {
@@ -114,7 +117,7 @@
             } else {
               promise = pollRes.save({}, {
                 name: this.form.name,
-                author: this.form.author,
+                author: this.username,
                 options: this.form.options
               })
             }
@@ -128,6 +131,9 @@
             }).catch(() => {})
           }
         })
+      },
+      isOwner (poll) {
+        return poll.author === this.username
       },
       editPoll (poll) {
         Object.assign(this.form, poll)
@@ -168,4 +174,6 @@
       cursor pointer
       &:hover
         color $color-primary
+  .ownPoll
+    background-color: green
 </style>
