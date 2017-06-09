@@ -1,5 +1,5 @@
 export default {
-  poll: {
+  polls: {
     breadcrumb: {
       home: 'Home',
       current: 'Polls'

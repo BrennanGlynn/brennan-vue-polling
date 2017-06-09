@@ -1,30 +1,29 @@
 <template>
   <content-module name="polls">
     <el-breadcrumb separator="/" style="margin-bottom:.5rem">
-      <el-breadcrumb-item to="/dashboard">{{$t('poll.breadcrumb.home')}}</el-breadcrumb-item>
-      <el-breadcrumb-item>{{$t('poll.breadcrumb.current')}}</el-breadcrumb-item>
+      <el-breadcrumb-item to="/dashboard">{{$t('polls.breadcrumb.home')}}</el-breadcrumb-item>
+      <el-breadcrumb-item>{{$t('polls.breadcrumb.current')}}</el-breadcrumb-item>
     </el-breadcrumb>
     <div style="margin-bottom:.5rem">
       <el-button type="primary" icon="plus" @click.native="createPoll">{{$t('operation.create')}}</el-button>
     </div>
     <div>
-      <el-card :class="{ownPoll: isOwner(poll)}" class="box-card" v-for="poll in polls" :key="poll._id">
+      <el-card :class="{ownPoll: isOwner(poll)}" class="box-card" v-for="(poll, index) in polls" :key="index">
         <div slot="header" class="clearfix">
-          <span>{{poll.name}}</span>
+          <span>{{polls.name}}</span>
           <i class="el-icon-delete icon" @click="deletePoll(poll)"></i>
           <i class="el-icon-edit icon" @click="editPoll(poll)"></i>
         </div>
         <p>
           Poll by {{poll.author}}
         </p>
-        <div v-for="option in poll.options" class="item">
-          {{ option.option }} {{ option.votes }}
-        </div>
+        <div v-for="option in poll.options">{{option.option}} {{option.votes}}</div>
+        <el-button @click="goTo(poll._id)" type="primary">Vote</el-button>
       </el-card>
     </div>
-    <el-dialog :title="form._id ? $t('poll.edit.update') : $t('poll.edit.create')" v-model="formVisible">
+    <el-dialog :title="form._id ? $t('polls.edit.update') : $t('polls.edit.create')" v-model="formVisible">
       <el-form :model="form" :rules="rules" ref="poll">
-        <el-form-item :label="$t('poll.model.name')" prop="name">
+        <el-form-item :label="$t('polls.model.name')" prop="name">
           <el-input v-model="form.name"></el-input>
         </el-form-item>
         <el-form-item
@@ -39,7 +38,7 @@
       </el-form>
       <span slot="footer" class="dialog-footer">
         <el-button @click.native="cancelForm">{{$t('confirm.cancel')}}</el-button>
-        <el-button @click.native="addOption">{{$t('poll.edit.addOption')}}</el-button>
+        <el-button @click.native="addOption">{{$t('polls.edit.addOption')}}</el-button>
         <el-button type="primary" @click.native="saveForm">{{$t('confirm.ok')}}</el-button>
       </span>
     </el-dialog>
@@ -52,8 +51,14 @@
   import ElButton from '../../../node_modules/element-ui/packages/button/src/button'
   import ElFormItem from '../../../node_modules/element-ui/packages/form/src/form-item'
   import ElInput from '../../../node_modules/element-ui/packages/input/src/input'
+  import ElForm from '../../../node_modules/element-ui/packages/form/src/form'
+  import ElRadio from '../../../node_modules/element-ui/packages/radio/src/radio'
+  import ElRadioGroup from '../../../node_modules/element-ui/packages/radio/src/radio-group'
   export default {
     components: {
+      ElRadioGroup,
+      ElRadio,
+      ElForm,
       ElInput,
       ElFormItem,
       ElButton },
@@ -68,9 +73,9 @@
           options: [{ option: '' }, { option: '' }]
         },
         rules: {
-          name: [{ required: true, message: this.$t('poll.rules.name'), trigger: 'blur' }],
-          author: [{ required: true, message: this.$t('poll.rules.author'), trigger: 'blur' }],
-          options: [{ type: 'array', required: true, message: this.$t('poll.rules.options'), trigger: 'change' }]
+          name: [{ required: true, message: this.$t('polls.rules.name'), trigger: 'blur' }],
+          author: [{ required: true, message: this.$t('polls.rules.author'), trigger: 'blur' }],
+          options: [{ type: 'array', required: true, message: this.$t('polls.rules.options'), trigger: 'change' }]
         },
         polls: [],
         radio: ''
@@ -88,6 +93,9 @@
         }).catch(err => {
           console.error(err)
         })
+      },
+      goTo (pollId) {
+        this.$router.push('/polls/' + pollId)
       },
       addOption () {
         this.form.options.push({ 'option': '' })

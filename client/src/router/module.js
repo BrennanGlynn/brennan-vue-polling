@@ -18,4 +18,9 @@ export default [{
   component: (resolve) => {
     import('../view/PollList.vue').then(resolve)
   }
+}, {
+  path: '/polls/:id',
+  component: (resolve) => {
+    import('../view/SinglePoll.vue').then(resolve)
+  }
 }]
