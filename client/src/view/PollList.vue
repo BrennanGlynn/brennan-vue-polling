@@ -15,7 +15,11 @@
           <i class="el-icon-edit icon" @click="editPoll(poll)"></i>
         </div>
         <div class="body">
-          <h2 v-for="option in poll.options">{{option.option}} {{option.votes}}</h2>
+          <div v-for="option in poll.options">
+            {{option.option}} - {{option.votes}} Votes
+            <el-progress :text-inside="true" :stroke-width="18" :percentage="percentOfVotes(option.votes, poll.totalVotes)"></el-progress>
+          </div>
+          {{poll.totalVotes || 0}} Total Votes
           <h3>Poll by {{poll.author}}</h3>
         </div>
         <el-button size="small" @click="goTo(poll._id)" type="primary">Vote</el-button>
@@ -159,6 +163,10 @@
             this.fetch()
           })
         }).catch(() => {})
+      },
+      percentOfVotes (votes, total) {
+        if (!total) return 0
+        return (votes / total) * 100
       }
     },
     created () {

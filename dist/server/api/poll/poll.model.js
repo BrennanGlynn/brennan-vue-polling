@@ -11,7 +11,8 @@ var OptionSchema = new Schema({
 var PollSchema = new Schema({
   name: { type: String, required: true },
   author: { type: String, required: true },
-  options: { type: [OptionSchema], required: true }
+  options: { type: [OptionSchema], required: true },
+  totalVotes: Number
 });
 
 module.exports = mongoose.model('Poll', PollSchema);
