@@ -16,8 +16,8 @@
         </div>
         <div class="body">
           <div v-for="option in poll.options">
-            {{option.option}} - {{option.votes}} Votes
-            <el-progress :text-inside="true" :stroke-width="18" :percentage="percentOfVotes(option.votes, poll.totalVotes)"></el-progress>
+            {{option.option}} - {{option.votes.length}} Votes
+            <el-progress :text-inside="true" :stroke-width="18" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
           </div>
           {{poll.totalVotes || 0}} Total Votes
           <h3>Poll by {{poll.author}}</h3>
@@ -74,7 +74,7 @@
           _id: '',
           name: '',
           author: '',
-          options: [{ option: '' }, { option: '' }]
+          options: [{ option: '', votes: [] }, { option: '', votes: [] }]
         },
         rules: {
           name: [{ required: true, message: this.$t('polls.rules.name'), trigger: 'blur' }],
@@ -102,7 +102,7 @@
         this.$router.push('/polls/' + pollId)
       },
       addOption () {
-        this.form.options.push({ 'option': '' })
+        this.form.options.push({ option: '', votes: [] })
       },
       removeOption (option) {
         const index = this.form.options.indexOf(option)

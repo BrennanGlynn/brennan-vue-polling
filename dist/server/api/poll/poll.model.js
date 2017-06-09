@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 
 var OptionSchema = new Schema({
   option: { type: String, required: true },
-  votes: { type: Number, default: 0 }
+  votes: { type: [String], default: [] }
 });
 
 var PollSchema = new Schema({
