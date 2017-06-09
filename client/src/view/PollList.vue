@@ -9,16 +9,16 @@
     </div>
     <div>
       <el-card :class="{ownPoll: isOwner(poll)}" class="box-card" v-for="(poll, index) in polls" :key="index">
-        <div slot="header" class="clearfix">
-          <span>{{polls.name}}</span>
+        <div slot="header" class="header clearfix">
+          <span>{{poll.name}}</span>
           <i class="el-icon-delete icon" @click="deletePoll(poll)"></i>
           <i class="el-icon-edit icon" @click="editPoll(poll)"></i>
         </div>
-        <p>
-          Poll by {{poll.author}}
-        </p>
-        <div v-for="option in poll.options">{{option.option}} {{option.votes}}</div>
-        <el-button @click="goTo(poll._id)" type="primary">Vote</el-button>
+        <div class="body">
+          <h2 v-for="option in poll.options">{{option.option}} {{option.votes}}</h2>
+          <h3>Poll by {{poll.author}}</h3>
+        </div>
+        <el-button size="small" @click="goTo(poll._id)" type="primary">Vote</el-button>
       </el-card>
     </div>
     <el-dialog :title="form._id ? $t('polls.edit.update') : $t('polls.edit.create')" v-model="formVisible">
@@ -175,13 +175,22 @@
     width 20rem
     height 25em
     margin 1rem
+    h2
+      16px
+      font-weight normal
     .icon
       float right
       margin-left .5rem
-      color $color-silver
       cursor pointer
       &:hover
         color $color-primary
+    .header
+      color #0cb4e8
+      font-weight bold
+      font-size 20px
   .ownPoll
-    background-color: green
+    background-color mediumspringgreen
+    color white
+    .header
+      color white
 </style>
