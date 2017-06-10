@@ -162,8 +162,10 @@
         }).catch(() => {})
       },
       percentOfVotes (votes, total) {
+        const percent = (votes / total) * 100
         if (!total) return 0
-        return (votes / total) * 100
+        if (percent % 1 === 0) return percent
+        return Number(percent.toFixed(2))
       }
     },
     created () {

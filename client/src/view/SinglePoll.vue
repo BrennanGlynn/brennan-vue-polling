@@ -16,7 +16,8 @@
           </el-radio-group>
         </el-form-item>
       </el-form>
-      <el-button v-if="this.form.choice" type="primary" @click.native="saveForm" size="small">Send a vote for {{this.form.choice}}</el-button>
+      Has voted: {{hasVoted}}
+      <el-button v-if="this.form.choice && !hasVoted" type="primary" @click.native="saveForm" size="small">Send a vote for {{this.form.choice}}</el-button>
       <p v-for="(option, index) in poll.options" :key="index" >{{option.option}} {{option.votes}}</p>
     </div>
   </content-module>
@@ -42,7 +43,8 @@
         form: {
           choice: ''
         },
-        poll: {}
+        poll: {},
+        hasVoted: false
       }
     },
     computed: {
@@ -55,11 +57,15 @@
         pollRes.query({ _id: this.$route.params.id }, 'name author options').then(response => {
           response.json().then(response => {
             this.poll = response
+            // check if user has already voted
+            for (const option of this.poll.options) {
+              if (option.votes.indexOf(this.username) > -1) this.hasVoted = true
+            }
           })
         })
       },
       saveForm () {
-        console.log('|||TODO SEND THIS TO THE SERVER||| Choice: ' + this.form.choice + ' User: ' + this.username)
+        console.log('|||TODO SEND THIS TO THE SERVER||| Choice: ' + this.form.choice + ' User: ' + this.username + ' Poll: ' + JSON.stringify(this.poll))
       }
     },
     created () {
