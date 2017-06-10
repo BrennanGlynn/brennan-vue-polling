@@ -11,8 +11,8 @@
       <el-card :class="{ownPoll: isOwner(poll)}" class="box-card" v-for="(poll, index) in polls" :key="index">
         <div slot="header" class="header clearfix">
           <span>{{poll.name}}</span>
-          <i class="el-icon-delete icon" @click="deletePoll(poll)"></i>
-          <i class="el-icon-edit icon" @click="editPoll(poll)"></i>
+          <i v-if="isOwner(poll)" class="el-icon-delete icon" @click="deletePoll(poll)"></i>
+          <i v-if="isOwner(poll)" class="el-icon-edit icon" @click="editPoll(poll)"></i>
         </div>
         <div class="body">
           <div v-for="option in poll.options">
@@ -73,12 +73,10 @@
         form: {
           _id: '',
           name: '',
-          author: '',
           options: [{ option: '', votes: [] }, { option: '', votes: [] }]
         },
         rules: {
           name: [{ required: true, message: this.$t('polls.rules.name'), trigger: 'blur' }],
-          author: [{ required: true, message: this.$t('polls.rules.author'), trigger: 'blur' }],
           options: [{ type: 'array', required: true, message: this.$t('polls.rules.options'), trigger: 'change' }]
         },
         polls: [],
@@ -116,7 +114,6 @@
       cancelForm () {
         this.form._id = ''
         this.form.name = ''
-        this.form.author = ''
         this.form.options = []
         this.formVisible = false
       },
@@ -197,8 +194,7 @@
       font-weight bold
       font-size 20px
   .ownPoll
-    background-color mediumspringgreen
-    color white
-    .header
-      color white
+    background-color #232323
+    div
+      color: white
 </style>
