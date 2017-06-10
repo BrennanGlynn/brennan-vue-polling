@@ -3,8 +3,8 @@
     <div v-if="loggedIn" id="app-menu">
       <router-link class="logo-wrapper" to="/" exact>Backend System</router-link>
       <el-menu :default-active="$route.path" theme="dark" :router="true">
-        <el-menu-item index="/users">{{$t('menu.users')}}</el-menu-item>
-        <el-menu-item index="/things">{{$t('menu.things')}}</el-menu-item>
+        <el-menu-item v-if="userRole === 'admin'" index="/users">{{$t('menu.users')}}</el-menu-item>
+        <!--<el-menu-item index="/things">{{$t('menu.things')}}</el-menu-item>-->
         <el-menu-item index="/polls">{{$t('menu.polls')}}</el-menu-item>
       </el-menu>
     </div>
@@ -18,7 +18,7 @@ import ElMenuItem from '../../../node_modules/element-ui/packages/menu/src/menu-
 export default {
   locales,
   computed: {
-    ...mapGetters(['loggedIn'])
+    ...mapGetters(['loggedIn', 'userRole'])
   },
   components: {
     ElMenuItem,
