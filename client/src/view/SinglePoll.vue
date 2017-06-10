@@ -16,7 +16,7 @@
           </el-radio-group>
         </el-form-item>
       </el-form>
-      Has voted: {{hasVoted}}
+      <h1>Has voted: {{hasVoted}}</h1>
       <el-button v-if="this.form.choice && !hasVoted" type="primary" @click.native="saveForm" size="small">Send a vote for {{this.form.choice}}</el-button>
       <p v-for="(option, index) in poll.options" :key="index" >{{option.option}} {{option.votes}}</p>
     </div>
@@ -58,14 +58,35 @@
           response.json().then(response => {
             this.poll = response
             // check if user has already voted
-            for (const option of this.poll.options) {
-              if (option.votes.indexOf(this.username) > -1) this.hasVoted = true
+            if (!this.hasVoted) {
+              for (const option of this.poll.options) {
+                if (option.votes.indexOf(this.username) > -1) {
+                  this.hasVoted = true
+                  return
+                }
+              }
             }
           })
         })
       },
       saveForm () {
-        console.log('|||TODO SEND THIS TO THE SERVER||| Choice: ' + this.form.choice + ' User: ' + this.username + ' Poll: ' + JSON.stringify(this.poll))
+        for (const option of this.poll.options) {
+          if (option.option === this.form.choice) {
+            option.votes.push(this.username)
+            this.hasVoted = true
+            this.poll.totalVotes += 1
+          }
+        }
+        pollRes.update({ _id: this.poll._id }, this.poll).then(() => {
+          this.cancelForm()
+          console.log('success')
+          this.fetch()
+        }).catch((err) => {
+          console.log(err)
+        })
+      },
+      cancelForm () {
+        this.form.choice = ''
       }
     },
     created () {

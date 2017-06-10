@@ -12,7 +12,7 @@ const PollSchema = new Schema({
   name: { type: String, required: true },
   author: { type: String, required: true },
   options: { type: [OptionSchema], required: true },
-  totalVotes: Number
+  totalVotes: { type: Number, default: 0 }
 })
 
 module.exports = mongoose.model('Poll', PollSchema)
