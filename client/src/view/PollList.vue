@@ -180,7 +180,6 @@
   .box-card
     display inline-block
     width 20rem
-    height 25em
     margin 1rem
     h2
       16px

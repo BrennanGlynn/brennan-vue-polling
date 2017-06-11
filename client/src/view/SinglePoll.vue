@@ -3,7 +3,8 @@
     <el-breadcrumb separator="/" style="margin-bottom:.5rem">
       <el-breadcrumb-item to="/dashboard">{{$t('poll.breadcrumb.home')}}</el-breadcrumb-item>
       <el-breadcrumb-item to="/polls">{{$t('poll.breadcrumb.polls')}}</el-breadcrumb-item>
-      <el-breadcrumb-item>{{$route.params.id}}</el-breadcrumb-item>
+      <el-breadcrumb-item>{{poll.author}}</el-breadcrumb-item>
+      <el-breadcrumb-item>{{poll.name}}</el-breadcrumb-item>
     </el-breadcrumb>
 
     <div>

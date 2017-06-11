@@ -22,8 +22,7 @@
       </el-form-item>
       <el-form-item>
         <h1>or</h1>
-        <el-button class="register-button" type="primary"
-                   native-type="submit" :loading="loading">{{$t('login.register')}}</el-button>
+        <el-button class="register-button" type="info" @click="register()">{{$t('login.register')}}</el-button>
       </el-form-item>
     </el-form>
     <!-- <div class="lang">
@@ -36,6 +35,7 @@
 </template>
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import { user as userRes } from 'resources'
 import locales from 'locales/login'
 import ElButton from '../../../../node_modules/element-ui/packages/button/src/button'
 export default {
@@ -56,7 +56,8 @@ export default {
         }]
       },
       loading: false,
-      loginError: false
+      loginError: false,
+      registerError: false
     }
   },
   computed: {
@@ -86,6 +87,24 @@ export default {
             setTimeout(() => {
               this.loginError = false
             }, 500)
+          })
+        }
+      })
+    },
+    register () {
+      this.$refs.form.validate(valid => {
+        if (valid) {
+          userRes.save(null, this.form).then(() => {
+            this.$message({
+              type: 'success',
+              message: this.$t('message.created')
+            })
+            this.onSubmit()
+          }).catch((err) => {
+            this.$message({
+              type: 'error',
+              message: err.status === 422 ? this.$t('user.action.userExisted') : this.$t('message.createFailed')
+            })
           })
         }
       })
