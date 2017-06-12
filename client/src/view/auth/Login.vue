@@ -21,8 +21,7 @@
           native-type="submit" :loading="loading">{{$t('login.button')}}</el-button>
       </el-form-item>
       <el-form-item>
-        <h1>or</h1>
-        <el-button class="register-button" type="info" @click="register()">{{$t('login.register')}}</el-button>
+        <el-button class="register-button" :class="{error: registerError}" type="info" @click="register()">{{$t('login.register')}}</el-button>
       </el-form-item>
     </el-form>
     <!-- <div class="lang">
@@ -66,6 +65,7 @@ export default {
   methods: {
     ...mapActions(['login', 'changeLang']),
     onSubmit () {
+      console.log(this.$refs.form)
       this.$refs.form.validate(valid => {
         if (valid) {
           this.loading = true
@@ -101,10 +101,15 @@ export default {
             })
             this.onSubmit()
           }).catch((err) => {
-            this.$message({
+            this.$notify({
+              title: this.$t('message.error'),
               type: 'error',
               message: err.status === 422 ? this.$t('user.action.userExisted') : this.$t('message.createFailed')
             })
+            this.registerError = true
+            setTimeout(() => {
+              this.registerError = false
+            }, 500)
           })
         }
       })
@@ -149,8 +154,10 @@ $input-width = 15rem
       animation shake .5s
   .register-button
     width 100%
-    &.primary
+    &.error
       animation shake .5s
+      background-color: red
+      border-color: red
 /*.lang
     position fixed
     right 1.5rem

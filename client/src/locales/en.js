@@ -1,5 +1,5 @@
 export default {
-  title: 'Vue Polling',
+  title: 'Brennan Vue Polling',
   constant: {
     name: 'Name',
     desc: 'Description'

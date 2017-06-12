@@ -101,7 +101,7 @@ export default {
       })
     },
     deleteUser (user) {
-      this.$confirm(`This action will remove the selected user: ${user.username} forever, still going on?`, this.$t('confirm.title'), {
+      this.$confirm(`This action will remove { ${user.username} } forever. Do you still want to delete them?`, this.$t('confirm.title'), {
         type: 'warning'
       }).then(() => {
         userRes.delete({ _id: user._id }).then(() => {
