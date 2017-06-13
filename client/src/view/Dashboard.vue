@@ -1,20 +1,28 @@
 <template>
   <content-module name="dashboard">
-    Dashboard
-    <el-button type="info" @click.native="sendMessage">Send hello</el-button>
+
   </content-module>
 </template>
 <script>
-export default {
-  methods: {
-    sendMessage () {
-      this.$socket.emit('client:hello', 'client hello')
+  import { poll as pollRes } from 'resources'
+  export default {
+    // todo
+    data: function () {
+      return {
+        polls: []
+      }
+    },
+    methods: {
+      fetch () {
+        pollRes.query().then(data => data.json()).then(data => {
+          this.polls = data.results
+        }).catch(err => {
+          console.error(err)
+        })
+      }
+    },
+    created () {
+      this.fetch()
     }
-  },
-  mounted () {
-    this.$socket.on('server:hello', data => {
-      this.$message.info(`Received from server: ${data}`)
-    })
   }
-}
 </script>

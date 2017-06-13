@@ -17,6 +17,9 @@ export default [{
   path: '/polls',
   component: (resolve) => {
     import('../view/PollList.vue').then(resolve)
+  },
+  meta: {
+    skipAuth: true
   }
 }, {
   path: '/polls/:id',
