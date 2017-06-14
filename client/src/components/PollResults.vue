@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <el-card class="box-card">
+  <div style="display: inline-block">
+    <el-card :class="{ownPoll: isOwner(poll)}" class="box-card">
       <div slot="header" class="header clearfix">
         <span>{{poll.name}}</span>
         <!--<i v-if="isOwner(poll) || this.userRole === 'admin'" class="el-icon-delete icon" @click="deletePoll(poll)"></i>-->
