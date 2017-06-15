@@ -3,13 +3,13 @@
     <el-card :class="{ownPoll: isOwner(poll)}" class="box-card">
       <div slot="header" class="header clearfix">
         <span>{{poll.name}}</span>
-        <!--<i v-if="isOwner(poll) || this.userRole === 'admin'" class="el-icon-delete icon" @click="deletePoll(poll)"></i>-->
-        <!--<i v-if="isOwner(poll) || this.userRole === 'admin'" class="el-icon-edit icon" @click="editPoll(poll)"></i>-->
+        <!--<i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-delete icon" @click="deletePoll(poll)"></i>-->
+        <!--<i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-edit icon" @click="editPoll(poll)"></i>-->
       </div>
       <div class="body">
         <div v-for="option in poll.options">
           {{option.option}} - {{option.votes.length}} Votes
-          <el-progress :text-inside="true" :stroke-width="18" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
+          <el-progress :text-inside="true" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
         </div>
         {{poll.totalVotes || 0}} Total Votes
         <h3>Poll by {{poll.author}}</h3>
@@ -49,11 +49,9 @@
   .item
     padding: 5px 0
   .box-card
+    min-height 27em
     width 20rem
     margin 1rem
-    h2
-      16px
-      font-weight normal
     .icon
       float right
       margin-left .5rem

@@ -1,7 +1,7 @@
 <template>
   <transition name="menu">
     <div v-if="loggedIn" id="app-menu">
-      <router-link class="logo-wrapper" to="/" exact>Backend System</router-link>
+      <router-link class="logo-wrapper" to="/" exact>Brennan Polling</router-link>
       <el-menu :default-active="$route.path" theme="dark" :router="true">
         <el-menu-item v-if="userRole === 'admin'" index="/users">{{$t('menu.users')}}</el-menu-item>
         <!--<el-menu-item index="/things">{{$t('menu.things')}}</el-menu-item>-->

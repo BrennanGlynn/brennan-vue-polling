@@ -2,6 +2,9 @@ export default [{
   path: '/dashboard',
   component: (resolve) => {
     import('../view/Dashboard.vue').then(resolve)
+  },
+  meta: {
+    skipAuth: true
   }
 }, {
   path: '/users',
@@ -17,9 +20,6 @@ export default [{
   path: '/polls',
   component: (resolve) => {
     import('../view/PollList.vue').then(resolve)
-  },
-  meta: {
-    skipAuth: true
   }
 }, {
   path: '/polls/:id',

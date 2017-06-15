@@ -7,6 +7,8 @@
       <el-breadcrumb-item>{{poll.name}}</el-breadcrumb-item>
     </el-breadcrumb>
 
+    <poll-vote :poll="poll" :hasVoted:="hasVoted"></poll-vote>
+
     <div>
       Created by: {{poll.author}}
       <h1>Title: {{poll.name}}</h1>
@@ -25,8 +27,9 @@
 </template>
 <script>
   import { mapGetters } from 'vuex'
-  import locales from 'locales/poll'
   import { poll as pollRes } from 'resources'
+  import locales from 'locales/poll'
+  import PollVote from 'components/PollVote'
   import ElRadioGroup from '../../../node_modules/element-ui/packages/radio/src/radio-group'
   import ElRadioButton from '../../../node_modules/element-ui/packages/radio/src/radio-button'
   import ElForm from '../../../node_modules/element-ui/packages/form/src/form'
@@ -36,13 +39,20 @@
       ElFormItem,
       ElForm,
       ElRadioButton,
-      ElRadioGroup
+      ElRadioGroup,
+      PollVote
     },
     locales,
     data: function () {
       return {
         form: {
           choice: ''
+        },
+        rules: {
+          choice: {
+            required: true,
+            message: 'Please choose an option!'
+          }
         },
         poll: {},
         hasVoted: false

@@ -7,12 +7,13 @@
     <div style="margin-bottom:.5rem">
       <el-button type="primary" icon="plus" @click.native="createPoll">{{$t('operation.create')}}</el-button>
     </div>
+    {{username}}
     <div>
       <el-card :class="{ownPoll: isOwner(poll)}" class="box-card" v-for="(poll, index) in polls" :key="index">
         <div slot="header" class="header clearfix">
           <span>{{poll.name}}</span>
-          <i v-if="isOwner(poll)" class="el-icon-delete icon" @click="deletePoll(poll)"></i>
-          <i v-if="isOwner(poll)" class="el-icon-edit icon" @click="editPoll(poll)"></i>
+          <i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-delete icon" @click="deletePoll(poll)"></i>
+          <i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-edit icon" @click="editPoll(poll)"></i>
         </div>
         <div class="body">
           <div v-for="option in poll.options">
@@ -85,7 +86,8 @@
     },
     computed: {
       ...mapGetters([
-        'username'
+        'username',
+        'userRole'
       ])
     },
     methods: {
