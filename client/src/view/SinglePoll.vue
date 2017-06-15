@@ -8,7 +8,12 @@
     </el-breadcrumb>
 
     <poll-vote v-if="!hasVoted" :poll="poll" :form="form" :rules="rules" :saveForm="saveForm"></poll-vote>
-    <poll-results v-else :poll="poll"></poll-results>
+    <poll-results v-else :poll="poll" :choice="choice">
+      <el-tooltip class="item" effect="light" content="You've already voted on this poll" placement="top">
+        <el-button size="small" @click="goTo('/dashboard')" type="primary">Return to dashboard</el-button>
+      </el-tooltip>
+
+    </poll-results>
 
   </content-module>
 </template>
@@ -44,6 +49,7 @@
           }
         },
         poll: {},
+        choice: '',
         hasVoted: false
       }
     },
@@ -61,6 +67,7 @@
             if (!this.hasVoted) {
               for (const option of this.poll.options) {
                 if (option.votes.indexOf(this.username) > -1) {
+                  this.choice = option.name
                   this.hasVoted = true
                   return
                 }
@@ -69,11 +76,15 @@
           })
         })
       },
+      goTo (route) {
+        this.$router.push(route)
+      },
       saveForm () {
         if (!this.hasVoted) {
           for (const option of this.poll.options) {
             if (option.option === this.form.choice) {
               option.votes.push(this.username)
+              this.choice = option.name
               this.hasVoted = true
               this.poll.totalVotes += 1
             }

@@ -22,7 +22,7 @@
 </template>
 <script>
   export default {
-    props: ['poll', 'hasVoted', 'form', 'rules', 'saveForm']
+    props: ['poll', 'form', 'rules', 'saveForm']
   }
 </script>
 <style></style>

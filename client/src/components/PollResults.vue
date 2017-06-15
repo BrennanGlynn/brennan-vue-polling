@@ -15,7 +15,8 @@
           </el-row>
           <el-row>
             <el-col :span="20">
-              <el-progress class="progress" :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
+              <el-progress class="progress" v-if="option.votes.indexOf(username) === -1" :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
+              <el-progress class="progress" v-else :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)" status="success"></el-progress>
             </el-col>
             <el-col :span="1" :offset="1">
               {{' ' + percentOfVotes(option.votes.length, poll.totalVotes) + '%'}}
@@ -25,7 +26,9 @@
         {{poll.totalVotes || 0}} Total Votes
         <h3>Poll by {{poll.author}}</h3>
       </div>
-      <el-button size="small" @click="goTo('/polls/' + poll._id)" type="primary">Vote</el-button>
+      <slot>
+        <el-button size="small" @click="goTo('/polls/' + poll._id)" type="primary">Vote</el-button>
+      </slot>
     </el-card>
   </div>
 </template>
