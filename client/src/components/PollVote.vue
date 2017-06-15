@@ -14,7 +14,7 @@
             </el-radio-group>
           </el-form-item>
         </el-form>
-        <el-button v-if="!hasVoted" type="primary" @click.native="saveForm" size="small">Submit</el-button>
+        <el-button type="primary" @click.native="saveForm" size="small">Submit</el-button>
         <h3>Poll by {{poll.author}}</h3>
       </div>
     </el-card>
@@ -22,20 +22,7 @@
 </template>
 <script>
   export default {
-    data: function () {
-      return {
-        form: {
-          choice: ''
-        },
-        rules: {
-          choice: {
-            required: true,
-            message: 'Please choose an option!'
-          }
-        }
-      }
-    },
-    props: ['poll', 'hasVoted']
+    props: ['poll', 'hasVoted', 'form', 'rules', 'saveForm']
   }
 </script>
 <style></style>

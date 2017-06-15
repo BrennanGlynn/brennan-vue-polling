@@ -7,9 +7,20 @@
         <!--<i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-edit icon" @click="editPoll(poll)"></i>-->
       </div>
       <div class="body">
-        <div v-for="option in poll.options">
-          {{option.option}} - {{option.votes.length}} Votes
-          <el-progress :text-inside="true" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
+        <div class="options" v-for="option in poll.options">
+          <el-row>
+            <el-col :span="24">
+              {{option.option}}
+            </el-col>
+          </el-row>
+          <el-row>
+            <el-col :span="20">
+              <el-progress class="progress" :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
+            </el-col>
+            <el-col :span="1" :offset="1">
+              {{' ' + percentOfVotes(option.votes.length, poll.totalVotes) + '%'}}
+            </el-col>
+          </el-row>
         </div>
         {{poll.totalVotes || 0}} Total Votes
         <h3>Poll by {{poll.author}}</h3>
@@ -20,7 +31,9 @@
 </template>
 <script>
   import { mapGetters } from 'vuex'
+  import ElCol from 'element-ui/packages/col/src/col'
   export default {
+    components: { ElCol },
     computed: {
       ...mapGetters([
         'username',
@@ -36,9 +49,7 @@
       },
       percentOfVotes (votes, total) {
         const percent = (votes / total) * 100
-        if (!total) return 0
-        if (percent % 1 === 0) return percent
-        return Number(percent.toFixed(2))
+        return Number(percent.toFixed(0))
       }
     },
     props: ['poll']
@@ -50,7 +61,7 @@
     padding: 5px 0
   .box-card
     min-height 27em
-    width 20rem
+    width 30em
     margin 1rem
     .icon
       float right
@@ -62,6 +73,10 @@
       color #0cb4e8
       font-weight bold
       font-size 20px
+    .options h2
+      font-size 16px
+      font-weight normal
+
   .ownPoll
     background-color #232323
     div

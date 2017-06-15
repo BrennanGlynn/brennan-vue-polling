@@ -7,22 +7,9 @@
       <el-breadcrumb-item>{{poll.name}}</el-breadcrumb-item>
     </el-breadcrumb>
 
-    <poll-vote :poll="poll" :hasVoted:="hasVoted"></poll-vote>
+    <poll-vote v-if="!hasVoted" :poll="poll" :form="form" :rules="rules" :saveForm="saveForm"></poll-vote>
+    <poll-results v-else :poll="poll"></poll-results>
 
-    <div>
-      Created by: {{poll.author}}
-      <h1>Title: {{poll.name}}</h1>
-      <el-form :model="form">
-        <el-form-item>
-          <el-radio-group v-model="form.choice">
-            <el-radio v-for="(option, index) in poll.options" :key="index" :label="option.option"></el-radio>
-          </el-radio-group>
-        </el-form-item>
-      </el-form>
-      <h1>Has voted: {{hasVoted}}</h1>
-      <el-button v-if="this.form.choice && !hasVoted" type="primary" @click.native="saveForm" size="small">Send a vote for {{this.form.choice}}</el-button>
-      <p v-for="(option, index) in poll.options" :key="index" >{{option.option}} {{option.votes}}</p>
-    </div>
   </content-module>
 </template>
 <script>
@@ -30,6 +17,7 @@
   import { poll as pollRes } from 'resources'
   import locales from 'locales/poll'
   import PollVote from 'components/PollVote'
+  import PollResults from 'components/PollResults'
   import ElRadioGroup from '../../../node_modules/element-ui/packages/radio/src/radio-group'
   import ElRadioButton from '../../../node_modules/element-ui/packages/radio/src/radio-button'
   import ElForm from '../../../node_modules/element-ui/packages/form/src/form'
@@ -40,7 +28,8 @@
       ElForm,
       ElRadioButton,
       ElRadioGroup,
-      PollVote
+      PollVote,
+      PollResults
     },
     locales,
     data: function () {
@@ -81,20 +70,32 @@
         })
       },
       saveForm () {
-        for (const option of this.poll.options) {
-          if (option.option === this.form.choice) {
-            option.votes.push(this.username)
-            this.hasVoted = true
-            this.poll.totalVotes += 1
+        if (!this.hasVoted) {
+          for (const option of this.poll.options) {
+            if (option.option === this.form.choice) {
+              option.votes.push(this.username)
+              this.hasVoted = true
+              this.poll.totalVotes += 1
+            }
           }
+          pollRes.update({ _id: this.poll._id }, this.poll).then(() => {
+            this.cancelForm()
+            this.$message({
+              type: 'success',
+              message: this.$t('message.created')
+            })
+            this.hasVoted = true
+            this.fetch()
+          }).catch((err) => {
+            console.log(err)
+          })
+        } else {
+          this.$notify({
+            title: this.$t('message.error'),
+            type: 'error',
+            message: 'You\'ve already voted!'
+          })
         }
-        pollRes.update({ _id: this.poll._id }, this.poll).then(() => {
-          this.cancelForm()
-          console.log('success')
-          this.fetch()
-        }).catch((err) => {
-          console.log(err)
-        })
       },
       cancelForm () {
         this.form.choice = ''
