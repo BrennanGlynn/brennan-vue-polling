@@ -10,13 +10,13 @@
         <div class="options" v-for="option in poll.options">
           <el-row>
             <el-col :span="24">
-              {{option.option}} - {{option.votes.length}} Votes <i v-if="option.votes.indexOf(username) > -1" class="el-icon-circle-check"></i>
+              {{option.option}} - {{option.votes.length}} Votes <i v-if="hasVotedFor(option)" class="el-icon-circle-check"></i>
             </el-col>
           </el-row>
           <el-row>
             <el-col :span="20">
-              <el-progress class="progress" v-if="option.votes.indexOf(username) === -1" :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
-              <el-progress class="progress" v-else :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)" status="success"></el-progress>
+              <el-progress v-if="hasVotedFor(option)" class="progress" :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)" status="success"></el-progress>
+              <el-progress v-else class="progress" :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
             </el-col>
             <el-col :span="1" :offset="1">
               {{' ' + percentOfVotes(option.votes.length, poll.totalVotes) + '%'}}
@@ -27,7 +27,8 @@
         <h3>Poll by {{poll.author}}</h3>
       </div>
       <slot>
-        <el-button size="small" @click="goTo('/polls/' + poll._id)" type="primary">Vote</el-button>
+        <el-button v-if="hasVoted" size="small" type="primary" disabled>Vote</el-button>
+        <el-button v-else size="small" @click="goTo('/polls/' + poll._id)" type="primary">Vote</el-button>
       </slot>
     </el-card>
   </div>
@@ -35,13 +36,21 @@
 <script>
   import { mapGetters } from 'vuex'
   import ElCol from 'element-ui/packages/col/src/col'
+  import ElButton from '../../../node_modules/element-ui/packages/button/src/button'
   export default {
-    components: { ElCol },
+    components: {
+      ElButton,
+      ElCol },
     computed: {
       ...mapGetters([
         'username',
         'userRole'
       ])
+    },
+    data: function () {
+      return {
+        hasVoted: false
+      }
     },
     methods: {
       goTo (route) {
@@ -49,6 +58,12 @@
       },
       isOwner (poll) {
         return poll.author === this.username
+      },
+      hasVotedFor (option) {
+        if (option.votes.indexOf(this.username) > -1) {
+          this.hasVoted = true
+          return true
+        }
       },
       percentOfVotes (votes, total) {
         const percent = (votes / total) * 100

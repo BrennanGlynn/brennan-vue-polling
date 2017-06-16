@@ -1,7 +1,8 @@
 <template>
   <content-module name="dashboard">
     <div class="polls">
-      <poll-results v-for="(poll, index) in this.polls" :key="index" :poll="poll"></poll-results>
+      <poll-results v-for="(poll, index) in this.polls" :key="index" :poll="poll">
+      </poll-results>
     </div>
     <!--Form to edit polls-->
     <el-dialog :title="$t('polls.edit.update')" v-model="formVisible">
