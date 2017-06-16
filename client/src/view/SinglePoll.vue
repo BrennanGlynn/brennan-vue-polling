@@ -6,13 +6,9 @@
       <el-breadcrumb-item>{{poll.author}}</el-breadcrumb-item>
       <el-breadcrumb-item>{{poll.name}}</el-breadcrumb-item>
     </el-breadcrumb>
-
     <poll-vote v-if="!hasVoted" :poll="poll" :form="form" :rules="rules" :saveForm="saveForm"></poll-vote>
     <poll-results v-else :poll="poll" :choice="choice">
-      <el-tooltip class="item" effect="light" content="You've already voted on this poll" placement="top">
-        <el-button size="small" @click="goTo('/dashboard')" type="primary">Return to dashboard</el-button>
-      </el-tooltip>
-
+      <el-button size="small" @click="goTo('/dashboard')" type="primary">Return to dashboard</el-button>
     </poll-results>
 
   </content-module>

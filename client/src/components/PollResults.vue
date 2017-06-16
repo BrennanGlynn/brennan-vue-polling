@@ -10,7 +10,7 @@
         <div class="options" v-for="option in poll.options">
           <el-row>
             <el-col :span="24">
-              {{option.option}}
+              {{option.option}} - {{option.votes.length}} Votes <i v-if="option.votes.indexOf(username) > -1" class="el-icon-circle-check"></i>
             </el-col>
           </el-row>
           <el-row>
