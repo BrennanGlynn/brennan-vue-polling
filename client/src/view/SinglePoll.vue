@@ -10,7 +10,6 @@
     <poll-results v-else :poll="poll" :choice="choice">
       <el-button size="small" @click="goTo('/dashboard')" type="primary">Return to dashboard</el-button>
     </poll-results>
-
   </content-module>
 </template>
 <script>

@@ -1,8 +1,10 @@
 <template>
   <content-module name="dashboard">
-    <div class="polls">
-      <poll-results v-for="(poll, index) in this.polls" :key="index" :poll="poll">
-      </poll-results>
+    <div v-if="loggedIn">
+      <el-button icon="plus" @click="createPoll" type="info">Create a Poll!</el-button>
+    </div>
+    <div>
+      <poll-results v-for="(poll, index) in this.polls" :key="index" :poll="poll"></poll-results>
     </div>
     <!--Form to edit polls-->
     <el-dialog :title="$t('polls.edit.update')" v-model="formVisible">
@@ -32,6 +34,7 @@
 </template>
 <script>
   import { poll as pollRes } from 'resources'
+  import { mapGetters } from 'vuex'
   import locales from 'locales/polls'
   import PollResults from 'components/PollResults'
   export default {
@@ -40,7 +43,6 @@
       return {
         formVisible: false,
         form: {
-          _id: '',
           name: '',
           options: [{ option: '', votes: [] }, { option: '', votes: [] }]
         },
@@ -51,6 +53,13 @@
         polls: []
       }
     },
+    computed: {
+      ...mapGetters([
+        'username',
+        'userRoll',
+        'loggedIn'
+      ])
+    },
     methods: {
       fetch () {
         pollRes.query().then(data => data.json()).then(data => {
@@ -59,9 +68,45 @@
           console.error(err)
         })
       },
+      addOption () {
+        this.form.options.push({ option: '', votes: [] })
+      },
+      createPoll () {
+        this.formVisible = true
+      },
+      cancelForm () {
+        this.form._id = undefined
+        this.form.name = ''
+        this.form.options = [{ option: '', votes: [] }, { option: '', votes: [] }]
+        this.formVisible = false
+      },
       editPoll (poll) {
         Object.assign(this.form, poll)
         this.formVisible = true
+      },
+      saveForm () {
+        this.$refs.poll.validate(valid => {
+          if (valid) {
+            let promise
+            if (this.form._id) {
+              promise = pollRes.update({ _id: this.form._id }, this.form)
+            } else {
+              promise = pollRes.save({}, {
+                name: this.form.name,
+                author: this.username,
+                options: this.form.options
+              })
+            }
+            promise.then(() => {
+              this.cancelForm()
+              this.$message({
+                type: 'success',
+                message: this.form._id ? this.$t('message.updated') : this.$t('message.created')
+              })
+              this.fetch()
+            }).catch(() => {})
+          }
+        })
       }
     },
     components: {
@@ -74,6 +119,4 @@
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/variable"
-  .polls
-    display inline-block
 </style>

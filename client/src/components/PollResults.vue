@@ -15,11 +15,11 @@
           </el-row>
           <el-row>
             <el-col :span="20">
-              <el-progress v-if="hasVotedFor(option)" class="progress" :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)" status="success"></el-progress>
-              <el-progress v-else class="progress" :show-text="false" :stroke-width="20" :percentage="percentOfVotes(option.votes.length, poll.totalVotes)"></el-progress>
+              <el-progress v-if="hasVotedFor(option)" class="progress" :show-text="false" :stroke-width="20" :percentage="percentage(option, poll)" status="success"></el-progress>
+              <el-progress v-else class="progress" :show-text="false" :stroke-width="20" :percentage="percentage(option, poll)"></el-progress>
             </el-col>
             <el-col :span="1" :offset="1">
-              {{' ' + percentOfVotes(option.votes.length, poll.totalVotes) + '%'}}
+              {{' ' + percentage(option, poll) + '%'}}
             </el-col>
           </el-row>
         </div>
@@ -65,9 +65,11 @@
           return true
         }
       },
-      percentOfVotes (votes, total) {
-        const percent = (votes / total) * 100
-        return Number(percent.toFixed(0))
+      percentage (option, poll) {
+        if (poll.totalVotes) {
+          const percent = (option.votes.length / poll.totalVotes * 100)
+          return Number(percent.toFixed(0))
+        } else return 0
       }
     },
     props: ['poll']

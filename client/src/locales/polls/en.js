@@ -5,7 +5,7 @@ export default {
       current: 'Polls'
     },
     model: {
-      name: 'Give your poll a title',
+      name: 'Please give your poll a title',
       author: 'What is your name?'
     },
     rules: {
@@ -16,7 +16,7 @@ export default {
     edit: {
       create: 'Add Poll',
       update: 'Change Poll',
-      addOption: 'Add an Option'
+      addOption: 'add an option'
     }
   }
 }
