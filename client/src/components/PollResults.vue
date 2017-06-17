@@ -1,30 +1,34 @@
 <template>
   <div style="width: 100%">
     <el-card :class="{ownPoll: isOwner(poll)}" class="box-card">
-      <div slot="header" class="header clearfix">
-        <span>{{poll.name}}</span>
+      <div slot="header" class="clearfix">
+        <el-row>
+          <el-col :span=22 :offset=1>
+            <el-button class="header" type="text" @click="goTo('/polls/' + poll._id)">{{poll.name}}</el-button>
+          </el-col>
+        </el-row>
         <!--<i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-delete icon" @click="deletePoll(poll)"></i>-->
         <!--<i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-edit icon" @click="editPoll(poll)"></i>-->
       </div>
       <div class="body">
         <div class="options" v-for="option in poll.options">
           <el-row>
-            <el-col :span="22" offset="1">
+            <el-col :span=22 :offset=1>
               {{option.option}} - {{option.votes.length}} Votes <i v-if="hasVotedFor(option)" class="el-icon-circle-check"></i>
             </el-col>
           </el-row>
           <el-row>
-            <el-col :span="20" offset="1">
+            <el-col :span=20 :offset=1>
               <el-progress v-if="hasVotedFor(option)" class="progress" :show-text="false" :stroke-width="20" :percentage="percentage(option, poll)" status="success"></el-progress>
               <el-progress v-else class="progress" :show-text="false" :stroke-width="20" :percentage="percentage(option, poll)"></el-progress>
             </el-col>
-            <el-col :span="1" :offset="1">
+            <el-col :span=1 :offset=1>
               {{' ' + percentage(option, poll) + '%'}}
             </el-col>
           </el-row>
         </div>
         <el-row>
-          <el-col :span="22" :offset="1">
+          <el-col class="footer" :span=22 :offset=1>
             {{poll.totalVotes || 0}} Total Votes
             <h3>Poll by {{poll.author}}</h3>
           </el-col>
@@ -32,7 +36,7 @@
 
       </div>
       <el-row>
-        <el-col :span="22" :offset="1">
+        <el-col :span=22 :offset=1>
           <slot>
             <el-button v-if="hasVoted" size="small" type="primary" disabled>Vote</el-button>
             <el-button v-else size="small" @click="goTo('/polls/' + poll._id)" type="primary">Vote</el-button>
@@ -106,7 +110,5 @@
       font-weight normal
 
   .ownPoll
-    background-color #232323
-    div
-      color: white
+    border 2px solid #13ce66
 </style>
