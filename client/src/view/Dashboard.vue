@@ -1,6 +1,6 @@
 <template>
   <content-module name="dashboard">
-    <div v-if="loggedIn">
+    <div class="head" v-if="loggedIn">
       <el-button icon="plus" @click="createPoll" type="info">Create a Poll!</el-button>
     </div>
     <div>

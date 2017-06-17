@@ -1,5 +1,5 @@
 <template>
-  <div style="display: inline-block">
+  <div style="width: 100%">
     <el-card :class="{ownPoll: isOwner(poll)}" class="box-card">
       <div slot="header" class="header clearfix">
         <span>{{poll.name}}</span>
@@ -9,12 +9,12 @@
       <div class="body">
         <div class="options" v-for="option in poll.options">
           <el-row>
-            <el-col :span="24">
+            <el-col :span="22" offset="1">
               {{option.option}} - {{option.votes.length}} Votes <i v-if="hasVotedFor(option)" class="el-icon-circle-check"></i>
             </el-col>
           </el-row>
           <el-row>
-            <el-col :span="20">
+            <el-col :span="20" offset="1">
               <el-progress v-if="hasVotedFor(option)" class="progress" :show-text="false" :stroke-width="20" :percentage="percentage(option, poll)" status="success"></el-progress>
               <el-progress v-else class="progress" :show-text="false" :stroke-width="20" :percentage="percentage(option, poll)"></el-progress>
             </el-col>
@@ -23,13 +23,22 @@
             </el-col>
           </el-row>
         </div>
-        {{poll.totalVotes || 0}} Total Votes
-        <h3>Poll by {{poll.author}}</h3>
+        <el-row>
+          <el-col :span="22" :offset="1">
+            {{poll.totalVotes || 0}} Total Votes
+            <h3>Poll by {{poll.author}}</h3>
+          </el-col>
+        </el-row>
+
       </div>
-      <slot>
-        <el-button v-if="hasVoted" size="small" type="primary" disabled>Vote</el-button>
-        <el-button v-else size="small" @click="goTo('/polls/' + poll._id)" type="primary">Vote</el-button>
-      </slot>
+      <el-row>
+        <el-col :span="22" :offset="1">
+          <slot>
+            <el-button v-if="hasVoted" size="small" type="primary" disabled>Vote</el-button>
+            <el-button v-else size="small" @click="goTo('/polls/' + poll._id)" type="primary">Vote</el-button>
+          </slot>
+        </el-col>
+      </el-row>
     </el-card>
   </div>
 </template>
@@ -81,7 +90,6 @@
     padding: 5px 0
   .box-card
     min-height 27em
-    width 30em
     margin 1rem
     .icon
       float right
