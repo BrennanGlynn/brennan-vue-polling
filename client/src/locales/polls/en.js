@@ -5,8 +5,7 @@ export default {
       current: 'Polls'
     },
     model: {
-      name: 'Please give your poll a title',
-      author: 'What is your name?'
+      name: 'Title'
     },
     rules: {
       name: 'Please input a name for your poll',

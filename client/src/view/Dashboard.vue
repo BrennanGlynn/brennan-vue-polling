@@ -1,10 +1,22 @@
 <template>
   <content-module name="dashboard">
     <div class="head" v-if="loggedIn">
-      <el-button icon="plus" @click="createPoll" type="info">Create a Poll!</el-button>
+      <el-row>
+        <el-col :span="24">
+          Brennan Polling
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="8" :offset="8">
+          <el-button size="small" icon="plus" @click="createPoll" type="success">Create a Poll!</el-button>
+        </el-col>
+      </el-row>
+      <el-row>
+      </el-row>
     </div>
     <div>
-      <poll-results v-for="(poll, index) in this.polls" :key="index" :poll="poll"></poll-results>
+      <poll-results v-for="(poll, index) in this.polls" :key="index" :poll="poll" :editPoll="editPoll"
+                    :deletePoll="deletePoll"></poll-results>
     </div>
     <!--Form to edit polls-->
     <el-dialog :title="$t('polls.edit.update')" v-model="formVisible">
@@ -20,14 +32,16 @@
           }"
         >
           <el-input v-model="option.option">
-            <el-button slot="append" @click.prevent="removeOption(option)">Delete</el-button>
+            <el-button size="mini" icon="delete" slot="append" @click.prevent="removeOption(option)"></el-button>
           </el-input>
         </el-form-item>
+        <el-button size="mini" @click.native="addOption">{{$t('polls.edit.addOption')}}</el-button>
       </el-form>
       <span slot="footer" class="dialog-footer">
-        <el-button @click.native="cancelForm">{{$t('confirm.cancel')}}</el-button>
-        <el-button @click.native="addOption">{{$t('polls.edit.addOption')}}</el-button>
-        <el-button type="primary" @click.native="saveForm">{{$t('confirm.ok')}}</el-button>
+        <el-button-group>
+          <el-button size="mini" @click.native="cancelForm">{{$t('confirm.cancel')}}</el-button>
+          <el-button size="mini" type="primary" @click.native="saveForm">{{$t('confirm.ok')}}</el-button>
+        </el-button-group>
       </span>
     </el-dialog>
   </content-module>
@@ -37,6 +51,7 @@
   import { mapGetters } from 'vuex'
   import locales from 'locales/polls'
   import PollResults from 'components/PollResults'
+  import ElButtonGroup from '../../../node_modules/element-ui/packages/button/src/button-group'
   export default {
     locales,
     data: function () {
@@ -71,6 +86,12 @@
       addOption () {
         this.form.options.push({ option: '', votes: [] })
       },
+      removeOption (option) {
+        const index = this.form.options.indexOf(option)
+        if (index !== -1) {
+          this.form.options.splice(index, 1)
+        }
+      },
       createPoll () {
         this.formVisible = true
       },
@@ -83,6 +104,20 @@
       editPoll (poll) {
         Object.assign(this.form, poll)
         this.formVisible = true
+      },
+      deletePoll (poll) {
+        this.$confirm(`This action will remove the selected poll: ${poll.name} Do you still want to continue?`, this.$t('confirm.title'), {
+          type: 'warning'
+        }).then(() => {
+          pollRes.delete({ _id: poll._id }).then(() => {
+            this.$message({
+              type: 'success',
+              message: this.$t('message.removed')
+            })
+            this.fetch()
+          })
+        }).catch(() => {
+        })
       },
       saveForm () {
         this.$refs.poll.validate(valid => {
@@ -104,12 +139,14 @@
                 message: this.form._id ? this.$t('message.updated') : this.$t('message.created')
               })
               this.fetch()
-            }).catch(() => {})
+            }).catch(() => {
+            })
           }
         })
       }
     },
     components: {
+      ElButtonGroup,
       PollResults
     },
     created () {
@@ -119,4 +156,12 @@
 </script>
 <style lang="stylus" scoped>
   @import "../assets/css/variable"
+  .head
+    background-color #20a0ff
+    border 1px solid #d1dbe5
+    border-radius 4px
+    color white
+    font-size 40px
+    text-align center
+    padding 10px 10px
 </style>

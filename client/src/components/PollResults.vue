@@ -3,12 +3,13 @@
     <el-card :class="{ownPoll: isOwner(poll)}" class="box-card">
       <div slot="header" class="clearfix">
         <el-row>
-          <el-col :span=22 :offset=1>
+          <el-col :span="22" :offset="1">
             <el-button class="header" type="text" @click="goTo('/polls/' + poll._id)">{{poll.name}}</el-button>
+            <i v-if="deletePoll !== undefined && isOwner(poll) || userRole === 'admin'" class="el-icon-delete icon" @click="deletePoll(poll)"></i>
+            <i v-if="editPoll !== undefined && isOwner(poll) || userRole === 'admin'" class="el-icon-edit icon" @click="editPoll(poll)"></i>
           </el-col>
         </el-row>
-        <!--<i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-delete icon" @click="deletePoll(poll)"></i>-->
-        <!--<i v-if="isOwner(poll) || userRole === 'admin'" class="el-icon-edit icon" @click="editPoll(poll)"></i>-->
+
       </div>
       <div class="body">
         <div class="options" v-for="option in poll.options">
@@ -33,7 +34,6 @@
             <h3>Poll by {{poll.author}}</h3>
           </el-col>
         </el-row>
-
       </div>
       <el-row>
         <el-col :span=22 :offset=1>
@@ -85,7 +85,7 @@
         } else return 0
       }
     },
-    props: ['poll']
+    props: ['poll', 'editPoll', 'deletePoll']
   }
 </script>
 <style lang="stylus" scoped>
@@ -97,8 +97,11 @@
     margin 1rem
     .icon
       float right
+      padding-top: 12px
       margin-left .5rem
       cursor pointer
+      font-size 16px
+      color #0cb4e8
       &:hover
         color $color-primary
     .header
