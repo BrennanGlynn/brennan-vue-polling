@@ -1,7 +1,8 @@
 <template>
   <transition name="header">
     <header id="header" v-if="loggedIn">
-      <h1></h1>
+      <el-button type="text" @click="$router.push('/')">Home</el-button>
+      <el-button type="text" @click="$router.push('/me')">My Polls</el-button>
       <div class="nav" v-if="loggedIn">
         <el-dropdown trigger="click">
           <span class="el-dropdown-link">
@@ -186,14 +187,14 @@ export default {
   justify-content space-between
   padding 0 1rem
   background-color $color-white
-  h1
+  button
     float left
     height $header-height
     line-height @height
     margin 0
-    font-weight normal
-    > a
-      color #fff
+    margin-left 20px
+    font-weight bolder
+    color black
   .nav
     float right
     margin 0

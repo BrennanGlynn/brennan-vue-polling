@@ -23,7 +23,7 @@
           {{poll.totalVotes || 0}} Total Votes
           <h3>Poll by {{poll.author}}</h3>
         </div>
-        <el-button size="small" @click="goTo('/polls/' + poll._id)" type="primary">Vote</el-button>
+        <el-button size="small" @click="$router.push('/polls/' + poll._id)" type="primary">Vote</el-button>
       </el-card>
     </div>
     <el-dialog :title="form._id ? $t('polls.edit.update') : $t('polls.edit.create')" v-model="formVisible">
@@ -97,9 +97,6 @@
         }).catch(err => {
           console.error(err)
         })
-      },
-      goTo (route) {
-        this.$router.push(route)
       },
       addOption () {
         this.form.options.push({ option: '', votes: [] })

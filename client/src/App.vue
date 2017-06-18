@@ -1,6 +1,6 @@
 <template>
   <div id="app-main">
-    <nav-menu></nav-menu>
+    <!--<nav-menu></nav-menu>-->
     <div class="app-wrapper">
       <x-header></x-header>
       <div class="app-container" :class="{active: loggedIn}">
@@ -14,7 +14,7 @@
 <script>
 import Vue from 'vue'
 import XHeader from './components/Header'
-import NavMenu from './components/NavMenu'
+// import NavMenu from './components/NavMenu'
 import NProgress from './components/NProgress'
 import ContentModule from './components/ContentModule'
 import { mapGetters } from 'vuex'
@@ -25,7 +25,7 @@ export default {
   },
   components: {
     XHeader,
-    NavMenu,
+//    NavMenu,
     NProgress
   }
 }

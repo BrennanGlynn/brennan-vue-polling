@@ -8,7 +8,7 @@
     </el-breadcrumb>
     <poll-vote v-if="!hasVoted" :poll="poll" :form="form" :rules="rules" :saveForm="saveForm"></poll-vote>
     <poll-results v-else :poll="poll" :choice="choice">
-      <el-button size="small" @click="goTo('/dashboard')" type="primary">Return to dashboard</el-button>
+      <el-button size="small" @click="$router.push('/dashboard')" type="primary">Return to dashboard</el-button>
     </poll-results>
   </content-module>
 </template>
@@ -70,9 +70,6 @@
             }
           })
         })
-      },
-      goTo (route) {
-        this.$router.push(route)
       },
       saveForm () {
         if (!this.hasVoted) {
