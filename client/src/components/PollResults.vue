@@ -52,12 +52,7 @@
 </template>
 <script>
   import { mapGetters } from 'vuex'
-  import ElCol from 'element-ui/packages/col/src/col'
-  import ElButton from '../../../node_modules/element-ui/packages/button/src/button'
   export default {
-    components: {
-      ElButton,
-      ElCol },
     computed: {
       ...mapGetters([
         'username',

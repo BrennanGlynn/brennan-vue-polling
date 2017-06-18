@@ -51,7 +51,6 @@
   import { mapGetters } from 'vuex'
   import locales from 'locales/polls'
   import PollResults from 'components/PollResults'
-  import ElButtonGroup from '../../../node_modules/element-ui/packages/button/src/button-group'
   export default {
     locales,
     data: function () {
@@ -146,7 +145,6 @@
       }
     },
     components: {
-      ElButtonGroup,
       PollResults
     },
     created () {

@@ -25,16 +25,8 @@
   import locales from 'locales/poll'
   import PollVote from 'components/PollVote'
   import PollResults from 'components/PollResults'
-  import ElRadioGroup from '../../../node_modules/element-ui/packages/radio/src/radio-group'
-  import ElRadioButton from '../../../node_modules/element-ui/packages/radio/src/radio-button'
-  import ElForm from '../../../node_modules/element-ui/packages/form/src/form'
-  import ElFormItem from '../../../node_modules/element-ui/packages/form/src/form-item'
   export default {
     components: {
-      ElFormItem,
-      ElForm,
-      ElRadioButton,
-      ElRadioGroup,
       PollVote,
       PollResults
     },

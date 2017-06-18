@@ -53,20 +53,7 @@
   import { mapGetters } from 'vuex'
   import { poll as pollRes } from 'resources'
   import locales from 'locales/polls'
-  import ElButton from '../../../node_modules/element-ui/packages/button/src/button'
-  import ElFormItem from '../../../node_modules/element-ui/packages/form/src/form-item'
-  import ElInput from '../../../node_modules/element-ui/packages/input/src/input'
-  import ElForm from '../../../node_modules/element-ui/packages/form/src/form'
-  import ElRadio from '../../../node_modules/element-ui/packages/radio/src/radio'
-  import ElRadioGroup from '../../../node_modules/element-ui/packages/radio/src/radio-group'
   export default {
-    components: {
-      ElRadioGroup,
-      ElRadio,
-      ElForm,
-      ElInput,
-      ElFormItem,
-      ElButton },
     locales,
     data () {
       return {
