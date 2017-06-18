@@ -6,9 +6,16 @@
       <el-breadcrumb-item>{{poll.author}}</el-breadcrumb-item>
       <el-breadcrumb-item>{{poll.name}}</el-breadcrumb-item>
     </el-breadcrumb>
-    <poll-vote v-if="!hasVoted" :poll="poll" :form="form" :rules="rules" :saveForm="saveForm"></poll-vote>
+    <poll-vote v-if="!hasVoted && loggedIn" :poll="poll" :form="form" :rules="rules" :saveForm="saveForm"></poll-vote>
     <poll-results v-else :poll="poll" :choice="choice">
-      <el-button size="small" @click="$router.push('/dashboard')" type="primary">Return to dashboard</el-button>
+      <div v-if="!loggedIn">
+        <el-tooltip effect="light" content="Please login to vote" placement="bottom">
+          <el-button size="small" @click="$router.push('/dashboard')" type="primary">Return to dashboard</el-button>
+        </el-tooltip>
+      </div>
+      <div v-else>
+        <el-button size="small" @click="$router.push('/dashboard')" type="primary">Return to dashboard</el-button>
+      </div>
     </poll-results>
   </content-module>
 </template>
@@ -50,7 +57,8 @@
     },
     computed: {
       ...mapGetters([
-        'username'
+        'username',
+        'loggedIn'
       ])
     },
     methods: {

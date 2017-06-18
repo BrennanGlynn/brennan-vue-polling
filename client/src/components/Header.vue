@@ -1,8 +1,7 @@
 <template>
   <transition name="header">
-    <header id="header" v-if="loggedIn">
+    <header class="header" v-if="loggedIn">
       <el-button type="text" @click="$router.push('/')">Home</el-button>
-      <el-button type="text" @click="$router.push('/me')">My Polls</el-button>
       <div class="nav" v-if="loggedIn">
         <el-dropdown trigger="click">
           <span class="el-dropdown-link">
@@ -180,7 +179,7 @@ export default {
 .header-enter
 .header-leave-active
   margin-top -($header-height)
-#header
+.header
   display flex
   flex-direction row
   align-items center

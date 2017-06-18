@@ -45,5 +45,4 @@ exports.update = function (req, res) {
 function handleError(res, err) {
   return res.status(500).send(err);
 }
-{}
 //# sourceMappingURL=poll.controller.js.map

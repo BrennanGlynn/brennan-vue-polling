@@ -1,6 +1,6 @@
 <template>
   <content-module name="dashboard">
-    <div class="head" v-if="loggedIn">
+    <div class="head">
       <el-row>
         <el-col :span="24">
           Brennan Polling
@@ -8,10 +8,10 @@
       </el-row>
       <el-row>
         <el-col :span="8" :offset="8">
-          <el-button size="small" icon="plus" @click="createPoll" type="success">Create a Poll!</el-button>
+          <el-button size="small" type="warning" @click="$router.push('/me')">My Polls</el-button>
+          <el-button v-if="loggedIn" size="small" icon="plus" @click="createPoll" type="success">Create a Poll!</el-button>
+          <el-button v-else size="small" type="success" @click="$router.push('/login')">Login</el-button>
         </el-col>
-      </el-row>
-      <el-row>
       </el-row>
     </div>
     <div>
