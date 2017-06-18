@@ -26,4 +26,9 @@ export default [{
   component: (resolve) => {
     import('../view/SinglePoll.vue').then(resolve)
   }
+}, {
+  path: '/me',
+  component: (resolve) => {
+    import('../view/MyPolls.vue').then(resolve)
+  }
 }]
