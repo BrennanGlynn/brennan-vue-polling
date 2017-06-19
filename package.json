@@ -23,7 +23,8 @@
     "server": "./node_modules/.bin/nodemon --watch server server/app.js",
     "dev": "npm run client|npm run server",
     "build": "node client/build/build.js",
-    "lint": "eslint --ext .js,.vue client/src"
+    "lint": "eslint --ext .js,.vue client/src",
+    "start": "node server/app.js"
   },
   "dependencies": {
     "async": "^2.4.1",
