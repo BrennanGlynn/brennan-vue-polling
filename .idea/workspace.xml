@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6c725eef-a88e-493b-af60-dfd485a37e87" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
+      <file leaf-file-name="Header.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/components/Header.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-189">
+              <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+              <folding>
+                <element signature="e#3505#3550#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dashboard.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/view/Dashboard.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="133" column="32" lean-forward="false" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
+              <folding>
+                <element signature="e#2007#2050#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-305">
+              <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package_json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>changePasswor</find>
+      <find>changePassword</find>
+      <find>ug</find>
+      <find>babe</find>
+      <find>l</find>
+      <find>lo</find>
+      <find>loa</find>
+      <find>loade</find>
+      <find>b</find>
+      <find>bel</find>
+      <find>be</find>
+      <find>ba</find>
+      <find>babel</find>
+      <find>e</find>
+      <find>n</find>
+      <find>node</find>
+      <find>nod</find>
+      <find>node_modules</find>
+      <find>u</find>
+      <find>ugl</find>
+      <find>ugli</find>
+      <find>uglif</find>
+      <find>uglify</find>
+      <find>loader</find>
+      <find>col</find>
+      <find>co</find>
+      <find>console</find>
+      <find>console.</find>
+      <find>console.log</find>
+      <find>button</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\brenn\WebstormProjects\brennan-vue\client\src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="b26b864cff817d52afca94b75ab8fc4ff3490af0" />
+      </map>
+    </option>
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/client/src/locales/header/en.js" />
+        <option value="$PROJECT_DIR$/client/src/locales/login/en.js" />
+        <option value="$PROJECT_DIR$/server/api/thing/thing.controller.js" />
+        <option value="$PROJECT_DIR$/server/api/poll/poll.socket.js" />
+        <option value="$PROJECT_DIR$/server/api/poll/poll.spec.js" />
+        <option value="$PROJECT_DIR$/client/src/view/ThingList.vue" />
+        <option value="$PROJECT_DIR$/client/src/locales/index.js" />
+        <option value="$PROJECT_DIR$/server/routes.js" />
+        <option value="$PROJECT_DIR$/client/src/locales/menu/en.js" />
+        <option value="$PROJECT_DIR$/server/api/user/user.controller.js" />
+        <option value="$PROJECT_DIR$/server/api/user/index.js" />
+        <option value="$PROJECT_DIR$/server/api/user/user.model.js" />
+        <option value="$PROJECT_DIR$/client/src/store/modules/user.js" />
+        <option value="$PROJECT_DIR$/client/src/components/PollCard.vue" />
+        <option value="$PROJECT_DIR$/client/src/locales/poll/index.js" />
+        <option value="$PROJECT_DIR$/client/src/locales/poll/en.js" />
+        <option value="$PROJECT_DIR$/server/api/poll/index.js" />
+        <option value="$PROJECT_DIR$/server/api/poll/poll.model.js" />
+        <option value="$PROJECT_DIR$/client/src/view/UserList.vue" />
+        <option value="$PROJECT_DIR$/client/src/locales/en.js" />
+        <option value="$PROJECT_DIR$/client/src/view/auth/Login.vue" />
+        <option value="$PROJECT_DIR$/client/src/components/PollVote.vue" />
+        <option value="$PROJECT_DIR$/client/src/locales/polls/en.js" />
+        <option value="$PROJECT_DIR$/client/src/components/NavMenu.vue" />
+        <option value="$PROJECT_DIR$/client/src/resources.js" />
+        <option value="$PROJECT_DIR$/server/api/poll/poll.controller.js" />
+        <option value="$PROJECT_DIR$/client/src/router/module.js" />
+        <option value="$PROJECT_DIR$/client/src/App.vue" />
+        <option value="$PROJECT_DIR$/client/src/view/MyPolls.vue" />
+        <option value="$PROJECT_DIR$/client/src/components/Header.vue" />
+        <option value="$PROJECT_DIR$/node_modules/element-ui/packages/col/src/col.js" />
+        <option value="$PROJECT_DIR$/node_modules/element-ui/src/mixins/emitter.js" />
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/client/build/webpack.prod.conf.js" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/client/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/client/src/view/PollList.vue" />
+        <option value="$PROJECT_DIR$/client/src/view/SinglePoll.vue" />
+        <option value="$PROJECT_DIR$/client/src/components/PollResults.vue" />
+        <option value="$PROJECT_DIR$/client/src/view/Dashboard.vue" />
+        <option value="$PROJECT_DIR$/client/dist/server.js" />
+        <option value="$PROJECT_DIR$/client/dist/package.json" />
+        <option value="$PROJECT_DIR$/dist/package.json" />
+        <option value="$PROJECT_DIR$/dist/server.js" />
+        <option value="$PROJECT_DIR$/firebase.json" />
+        <option value="$PROJECT_DIR$/server/app.js" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="3832" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="brennan-vue">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brennan-vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brennan-vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brennan-vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brennan-vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brennan-vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brennan-vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brennan-vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brennan-vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="true" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\brenn\WebstormProjects\brennan-vue\node_modules\eslint" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="add_unversioned_files" value="true&#10;C:/Users/brenn/WebstormProjects/brennan-vue/dist/package.json" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\brenn\WebstormProjects\brennan-vue\client\src\locales\polls" />
+      <recent name="C:\Users\brenn\WebstormProjects\brennan-vue\server\api\poll" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="MongoRunConfiguration" factoryName="Mongo">
+      <setting name="path" value="" />
+      <setting name="shellParams" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c725eef-a88e-493b-af60-dfd485a37e87" name="Default" comment="" />
+      <created>1496611356014</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1496611356014</updated>
+      <workItem from="1496611357396" duration="7354000" />
+      <workItem from="1496649641138" duration="1066000" />
+      <workItem from="1496708035809" duration="7992000" />
+      <workItem from="1496773773394" duration="21678000" />
+      <workItem from="1496859280958" duration="8072000" />
+      <workItem from="1496931684990" duration="43155000" />
+      <workItem from="1497039951046" duration="6967000" />
+      <workItem from="1497125441722" duration="114000" />
+      <workItem from="1497125587163" duration="11019000" />
+      <workItem from="1497214610575" duration="23251000" />
+      <workItem from="1497289564033" duration="459000" />
+      <workItem from="1497290036358" duration="7615000" />
+      <workItem from="1497377872168" duration="10776000" />
+      <workItem from="1497460685916" duration="17403000" />
+      <workItem from="1497551335805" duration="28458000" />
+      <workItem from="1497734120807" duration="24838000" />
+      <workItem from="1497807120804" duration="16276000" />
+    </task>
+    <task id="LOCAL-00001" summary="Integrated polls with socketio">
+      <created>1496775498012</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496775498012</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed api from directing toward things instead of polls">
+      <created>1496779520862</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496779520862</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Can now add delete and update polls">
+      <created>1496795949184</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1496795949184</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Polls page shows current state">
+      <created>1496818467099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496818467099</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Automatically assigns username as author">
+      <created>1496956660403</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496956660403</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Automatically assigns username as author">
+      <created>1496956773793</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496956773793</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created page for each poll">
+      <created>1496968898920</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496968898920</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adjusted style">
+      <created>1496982112012</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1496982112012</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Show percentage of total votes">
+      <created>1496983418305</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1496983418305</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed bug where total votes would sometimes be undefined">
+      <created>1497040893291</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1497040893291</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed bug where total votes would sometimes be undefined">
+      <created>1497041340685</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1497041340685</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed goTo method">
+      <created>1497076384476</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1497076384476</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update and delete icons only show if author of poll">
+      <created>1497078135561</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1497078135561</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Prepped the voting page">
+      <created>1497080734678</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1497080734678</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Checks to make sure user hasn't already voted">
+      <created>1497133199111</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1497133199111</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Voting feature implemented">
+      <created>1497138429364</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1497138429364</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Hid users page from non admin users">
+      <created>1497139017975</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1497139017975</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Can Register from login page">
+      <created>1497218214512</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1497218214512</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updated UI for login page">
+      <created>1497297554883</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1497297554883</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Turning result cards into their own component">
+      <created>1497390578753</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1497390578753</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed bug preventing polls from staying on the same line">
+      <created>1497469342178</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1497469342178</updated>
+    </task>
+    <task id="LOCAL-00022" summary="MISC">
+      <created>1497489571657</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1497489571657</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed buggy percentages">
+      <created>1497560685359</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1497560685359</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Poll shows what option you have already voted for">
+      <created>1497569696861</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1497569696861</updated>
+    </task>
+    <task id="LOCAL-00025" summary="improved ui">
+      <created>1497593441325</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1497593441325</updated>
+    </task>
+    <task id="LOCAL-00026" summary="More ui improvements">
+      <created>1497643375613</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1497643375613</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Create a poll from dashboard">
+      <created>1497655422920</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1497655422920</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Made poll component fill div">
+      <created>1497738575675</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1497738575675</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Fixed errors">
+      <created>1497739828223</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1497739828223</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Finished dashboard">
+      <created>1497757843814</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1497757843814</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Removed navmenu&#10;Adjusted UI&#10;Added labels for my polls page">
+      <created>1497768265230</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1497768265230</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Created page for my polls">
+      <created>1497768655387</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1497768655387</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Can view all of your own polls">
+      <created>1497777244469</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1497777244469</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Fixed bug causing build to fail">
+      <created>1497819999437</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1497819999437</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="236493000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="3832" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996812" sideWeight="0.5010633" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996812" sideWeight="0.49893674" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5362947" sideWeight="0.49893674" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23134328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32961932" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24976744" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Show percentage of total votes" />
+    <MESSAGE value="Fixed bug where total votes would sometimes be undefined" />
+    <MESSAGE value="Fixed goTo method" />
+    <MESSAGE value="update and delete icons only show if author of poll" />
+    <MESSAGE value="Prepped the voting page" />
+    <MESSAGE value="Checks to make sure user hasn't already voted" />
+    <MESSAGE value="Voting feature implemented" />
+    <MESSAGE value="Hid users page from non admin users" />
+    <MESSAGE value="Can Register from login page" />
+    <MESSAGE value="Updated UI for login page" />
+    <MESSAGE value="Turning result cards into their own component" />
+    <MESSAGE value="Fixed bug preventing polls from staying on the same line" />
+    <MESSAGE value="MISC" />
+    <MESSAGE value="Fixed buggy percentages" />
+    <MESSAGE value="Poll shows what option you have already voted for" />
+    <MESSAGE value="improved ui" />
+    <MESSAGE value="More ui improvements" />
+    <MESSAGE value="Create a poll from dashboard" />
+    <MESSAGE value="Made poll component fill div" />
+    <MESSAGE value="Fixed errors" />
+    <MESSAGE value="Finished dashboard" />
+    <MESSAGE value="Removed navmenu&#10;Adjusted UI&#10;Added labels for my polls page" />
+    <MESSAGE value="Created page for my polls" />
+    <MESSAGE value="Can view all of your own polls" />
+    <MESSAGE value="Fixed bug causing build to fail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug causing build to fail" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/src/view/ThingList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="101" column="88" lean-forward="false" selection-start-line="101" selection-start-column="88" selection-end-line="101" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/locales/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/ContentModule.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/assets/fonts/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/auth/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1953">
+          <caret line="96" column="14" lean-forward="false" selection-start-line="96" selection-start-column="12" selection-end-line="99" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/locales/en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/locales/polls/en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/locales/poll/en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/NavMenu.vue" />
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-resource/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-252">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-resource/src/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/user/user.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/poll/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/api/poll/poll.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/resources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/router/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="e#381#402#0" expanded="false" />
+            <element signature="e#491#537#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/server/app.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1343">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/element-ui/packages/col/src/col.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/element-ui/src/mixins/emitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/client/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="52" column="55" lean-forward="false" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/UserList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding>
+            <element signature="e#2060#2104#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/MyPolls.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1566#1599#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/PollList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+          <folding>
+            <element signature="e#2565#2598#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/PollVote.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/SinglePoll.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <element signature="e#1086#1119#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/PollResults.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+          <folding>
+            <element signature="e#3505#3550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/dist/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/dist/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/dist/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/dist/server.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/Dashboard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="133" column="32" lean-forward="false" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
+          <folding>
+            <element signature="e#2007#2050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1573">
+          <caret line="86" column="28" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-305">
+          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
