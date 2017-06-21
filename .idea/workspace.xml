@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c725eef-a88e-493b-af60-dfd485a37e87" name="Default" comment="Completed all user stories">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/css/app.2f03f7ed29e01890fa1c901786acdc81.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/css/app.2f03f7ed29e01890fa1c901786acdc81.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/fonts/element-icons.b02bdc1.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/img/login-bg.bd93cbf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/0.77db19b69e694e236749.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/0.77db19b69e694e236749.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/1.98446c53ea5a2eb92e4b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/1.98446c53ea5a2eb92e4b.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/2.74a2cc94165f9318f54a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/2.74a2cc94165f9318f54a.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/3.da54c7ae829a24524dee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/3.da54c7ae829a24524dee.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/4.f6c8ed9187128e35af9e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/4.f6c8ed9187128e35af9e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/5.d681a527f499bd72b617.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/5.d681a527f499bd72b617.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/6.e1b286c079b87fe41da3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/6.e1b286c079b87fe41da3.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/7.0e1ad672f7c1b072fd77.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/7.0e1ad672f7c1b072fd77.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/app.d16d4588cc4a0583b36e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/app.d16d4588cc4a0583b36e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/element.b3dd379e727bcd42e8d7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/element.b3dd379e727bcd42e8d7.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/manifest.1a3818f8563daf2e6111.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/manifest.1a3818f8563daf2e6111.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/vendor.eb53925938f0d4b48bb3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/vendor.eb53925938f0d4b48bb3.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/0.77db19b69e694e236749.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/0.77db19b69e694e236749.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/1.98446c53ea5a2eb92e4b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/1.98446c53ea5a2eb92e4b.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/2.74a2cc94165f9318f54a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/2.74a2cc94165f9318f54a.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/3.da54c7ae829a24524dee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/3.da54c7ae829a24524dee.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/4.f6c8ed9187128e35af9e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/4.f6c8ed9187128e35af9e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/5.d681a527f499bd72b617.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/5.d681a527f499bd72b617.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/6.e1b286c079b87fe41da3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/6.e1b286c079b87fe41da3.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/7.0e1ad672f7c1b072fd77.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/7.0e1ad672f7c1b072fd77.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/app.d16d4588cc4a0583b36e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/app.d16d4588cc4a0583b36e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/element.b3dd379e727bcd42e8d7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/element.b3dd379e727bcd42e8d7.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/manifest.1a3818f8563daf2e6111.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/manifest.1a3818f8563daf2e6111.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/PollResults.vue" afterPath="$PROJECT_DIR$/client/src/components/PollResults.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/SinglePoll.vue" afterPath="$PROJECT_DIR$/client/src/view/SinglePoll.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/auth/Login.vue" afterPath="$PROJECT_DIR$/client/src/view/auth/Login.vue" />
-    </list>
+    <list default="true" id="6c725eef-a88e-493b-af60-dfd485a37e87" name="Default" comment="" />
     <list id="aa91d4da-1438-4514-af73-c4c04b957a5d" name="NPM build" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,18 +15,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="525" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -657,11 +588,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498027029328</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Completed all user stories">
+      <created>1498033717440</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1498033717440</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243015000" />
+    <option name="totallyTimeSpent" value="243066000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -674,7 +612,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2114" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996812" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -683,7 +620,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37194473" sideWeight="0.49893674" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37194473" sideWeight="0.49893674" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23125997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3278427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
