@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c725eef-a88e-493b-af60-dfd485a37e87" name="Default" comment=".">
+    <list default="true" id="6c725eef-a88e-493b-af60-dfd485a37e87" name="Default" comment="Completed all user stories">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/css/app.2f03f7ed29e01890fa1c901786acdc81.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/css/app.2f03f7ed29e01890fa1c901786acdc81.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/fonts/element-icons.b02bdc1.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/img/login-bg.bd93cbf.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/0.77db19b69e694e236749.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/0.77db19b69e694e236749.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/1.98446c53ea5a2eb92e4b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/1.98446c53ea5a2eb92e4b.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/2.74a2cc94165f9318f54a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/2.74a2cc94165f9318f54a.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/3.da54c7ae829a24524dee.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/3.da54c7ae829a24524dee.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/4.f6c8ed9187128e35af9e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/4.f6c8ed9187128e35af9e.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/5.d681a527f499bd72b617.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/5.d681a527f499bd72b617.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/6.e1b286c079b87fe41da3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/6.e1b286c079b87fe41da3.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/7.0e1ad672f7c1b072fd77.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/7.0e1ad672f7c1b072fd77.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/app.d16d4588cc4a0583b36e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/app.d16d4588cc4a0583b36e.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/element.b3dd379e727bcd42e8d7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/element.b3dd379e727bcd42e8d7.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/manifest.1a3818f8563daf2e6111.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/manifest.1a3818f8563daf2e6111.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/vendor.eb53925938f0d4b48bb3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/dist/static/js/vendor.eb53925938f0d4b48bb3.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/0.77db19b69e694e236749.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/0.77db19b69e694e236749.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/1.98446c53ea5a2eb92e4b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/1.98446c53ea5a2eb92e4b.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/2.74a2cc94165f9318f54a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/2.74a2cc94165f9318f54a.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/3.da54c7ae829a24524dee.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/3.da54c7ae829a24524dee.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/4.f6c8ed9187128e35af9e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/4.f6c8ed9187128e35af9e.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/5.d681a527f499bd72b617.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/5.d681a527f499bd72b617.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/6.e1b286c079b87fe41da3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/6.e1b286c079b87fe41da3.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/7.0e1ad672f7c1b072fd77.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/7.0e1ad672f7c1b072fd77.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/app.d16d4588cc4a0583b36e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/app.d16d4588cc4a0583b36e.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/element.b3dd379e727bcd42e8d7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/element.b3dd379e727bcd42e8d7.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/manifest.1a3818f8563daf2e6111.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/client/dist/static/js/manifest.1a3818f8563daf2e6111.js.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/components/PollResults.vue" afterPath="$PROJECT_DIR$/client/src/components/PollResults.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/SinglePoll.vue" afterPath="$PROJECT_DIR$/client/src/view/SinglePoll.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/view/auth/Login.vue" afterPath="$PROJECT_DIR$/client/src/view/auth/Login.vue" />
     </list>
     <list id="aa91d4da-1438-4514-af73-c4c04b957a5d" name="NPM build" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,11 +74,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/app.js">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="711">
+              <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -41,7 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>changePasswor</find>
       <find>changePassword</find>
       <find>ug</find>
       <find>babe</find>
@@ -71,6 +125,7 @@
       <find>console.</find>
       <find>console.log</find>
       <find>button</find>
+      <find>{ option: '', votes: [] }</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\brenn\WebstormProjects\brennan-vue\client\src</dir>
@@ -108,7 +163,6 @@
         <option value="$PROJECT_DIR$/server/api/poll/poll.model.js" />
         <option value="$PROJECT_DIR$/client/src/view/UserList.vue" />
         <option value="$PROJECT_DIR$/client/src/locales/en.js" />
-        <option value="$PROJECT_DIR$/client/src/view/auth/Login.vue" />
         <option value="$PROJECT_DIR$/client/src/components/PollVote.vue" />
         <option value="$PROJECT_DIR$/client/src/locales/polls/en.js" />
         <option value="$PROJECT_DIR$/client/src/components/NavMenu.vue" />
@@ -125,8 +179,6 @@
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/client/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/client/src/view/PollList.vue" />
-        <option value="$PROJECT_DIR$/client/src/view/SinglePoll.vue" />
-        <option value="$PROJECT_DIR$/client/src/components/PollResults.vue" />
         <option value="$PROJECT_DIR$/client/src/view/Dashboard.vue" />
         <option value="$PROJECT_DIR$/client/dist/server.js" />
         <option value="$PROJECT_DIR$/client/dist/package.json" />
@@ -137,6 +189,10 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/client/src/components/PollResults.vue" />
+        <option value="$PROJECT_DIR$/client/src/view/SinglePoll.vue" />
+        <option value="$PROJECT_DIR$/client/src/view/auth/Login.vue" />
+        <option value="$PROJECT_DIR$/client/dist/index.html" />
       </list>
     </option>
   </component>
@@ -594,11 +650,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497819999437</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary=".">
+      <created>1498027029328</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1498027029328</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238121000" />
+    <option name="totallyTimeSpent" value="243015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -701,7 +764,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug where total votes would sometimes be undefined" />
     <MESSAGE value="Fixed goTo method" />
     <MESSAGE value="update and delete icons only show if author of poll" />
     <MESSAGE value="Prepped the voting page" />
@@ -726,7 +788,8 @@
     <MESSAGE value="Can view all of your own polls" />
     <MESSAGE value="Fixed bug causing build to fail" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Completed all user stories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed all user stories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -841,6 +904,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="e#381#402#0" expanded="false" />
+            <element signature="e#491#537#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -912,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/PollList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/PollVote.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -926,25 +986,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/SinglePoll.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="62" column="55" lean-forward="false" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/PollResults.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="8" column="90" lean-forward="false" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Header.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-189">
           <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+          <folding>
+            <element signature="e#3505#3550#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -990,30 +1038,17 @@
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/view/auth/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,10 +1059,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/PollList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1454">
+          <caret line="48" column="16" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="48" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/PollResults.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2275">
+          <caret line="74" column="69" lean-forward="false" selection-start-line="74" selection-start-column="69" selection-end-line="74" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/auth/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="87" column="19" lean-forward="true" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/view/SinglePoll.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="10" column="114" lean-forward="false" selection-start-line="10" selection-start-column="114" selection-end-line="10" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="635" lean-forward="false" selection-start-line="0" selection-start-column="635" selection-end-line="0" selection-end-column="635" />
+        <state relative-caret-position="35">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
           <folding />
         </state>
       </provider>

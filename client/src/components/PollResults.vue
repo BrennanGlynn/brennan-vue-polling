@@ -11,7 +11,6 @@
                 <i v-if="editPoll !== undefined && isOwner(poll) || userRole === 'admin'" class="el-icon-edit icon" @click="editPoll(poll)"></i>
               </el-col>
             </el-row>
-
           </div>
           <div class="body">
             <div class="options" v-for="option in poll.options">
@@ -31,6 +30,9 @@
               </el-row>
             </div>
             <el-row>
+              <el-col v-if="addOption" :span="22" :offset="1">
+                <el-button class="bottom-button" size="small" @click="addOption">Add an Option</el-button>
+              </el-col>
               <el-col class="footer" :span=22 :offset=1>
                 {{poll.totalVotes || 0}} Total Votes
                 <h3>Poll by {{poll.author}}</h3>
@@ -56,7 +58,8 @@
     computed: {
       ...mapGetters([
         'username',
-        'userRole'
+        'userRole',
+        'loggedIn'
       ])
     },
     data: function () {
@@ -69,7 +72,7 @@
         return poll.author === this.username
       },
       hasVotedFor (option) {
-        if (option.votes.indexOf(this.username) > -1) {
+        if (option.votes.indexOf(this.username) > -1 && this.loggedIn) {
           this.hasVoted = true
           return true
         }
@@ -81,7 +84,7 @@
         } else return 0
       }
     },
-    props: ['poll', 'editPoll', 'deletePoll']
+    props: ['poll', 'editPoll', 'deletePoll', 'addOption']
   }
 </script>
 <style lang="stylus" scoped>
@@ -93,7 +96,6 @@
     margin 1rem
     .icon
       float right
-      padding-top: 12px
       margin-left .5rem
       cursor pointer
       font-size 16px
@@ -102,11 +104,9 @@
         color $color-primary
     .header
       color #0cb4e8
-      font-weight bold
-      font-size 20px
-    .options h2
-      font-size 16px
-      font-weight normal
+      float left
   .ownPoll
     border 2px solid #13ce66
+  .bottom-button
+    margin 1rem
 </style>

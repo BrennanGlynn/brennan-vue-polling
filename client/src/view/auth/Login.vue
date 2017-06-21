@@ -69,7 +69,7 @@ export default {
         if (valid) {
           this.loading = true
           this.login({
-            username: this.form.username,
+            username: this.form.username.toLowerCase(),
             password: this.form.password
           }).then((data) => {
             this.loading = false
