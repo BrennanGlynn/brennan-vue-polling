@@ -2,17 +2,17 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/6.e1b286c079b87fe41da3.js" />
-        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/4.a981cd31290a24e83dd6.js" />
-        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/app.d16d4588cc4a0583b36e.js" />
-        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/2.e60da80d7f82e35452a9.js" />
-        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/7.0e1ad672f7c1b072fd77.js" />
         <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/5.d681a527f499bd72b617.js" />
-        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/manifest.31bca8bd98d7136e6b15.js" />
-        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/3.affdde27934561a03cb0.js" />
         <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/element.b3dd379e727bcd42e8d7.js" />
+        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/4.a981cd31290a24e83dd6.js" />
         <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/0.3fec6360d4f9e62899d8.js" />
         <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/1.98446c53ea5a2eb92e4b.js" />
+        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/app.d16d4588cc4a0583b36e.js" />
+        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/3.affdde27934561a03cb0.js" />
+        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/manifest.31bca8bd98d7136e6b15.js" />
+        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/2.e60da80d7f82e35452a9.js" />
+        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/7.0e1ad672f7c1b072fd77.js" />
+        <item url="file://$PROJECT_DIR$/dist/client/dist/static/js/6.e1b286c079b87fe41da3.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -48,17 +48,17 @@
       <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/manifest.1a3818f8563daf2e6111.js" />
       <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/4.f6c8ed9187128e35af9e.js" />
       <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/0.77db19b69e694e236749.js" />
-      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/6.e1b286c079b87fe41da3.js" />
-      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/4.a981cd31290a24e83dd6.js" />
-      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/app.d16d4588cc4a0583b36e.js" />
-      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/2.e60da80d7f82e35452a9.js" />
-      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/7.0e1ad672f7c1b072fd77.js" />
       <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/5.d681a527f499bd72b617.js" />
-      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/manifest.31bca8bd98d7136e6b15.js" />
-      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/3.affdde27934561a03cb0.js" />
       <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/element.b3dd379e727bcd42e8d7.js" />
+      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/4.a981cd31290a24e83dd6.js" />
       <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/0.3fec6360d4f9e62899d8.js" />
       <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/1.98446c53ea5a2eb92e4b.js" />
+      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/app.d16d4588cc4a0583b36e.js" />
+      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/3.affdde27934561a03cb0.js" />
+      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/manifest.31bca8bd98d7136e6b15.js" />
+      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/2.e60da80d7f82e35452a9.js" />
+      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/7.0e1ad672f7c1b072fd77.js" />
+      <root url="file://$PROJECT_DIR$/dist/client/dist/static/js/6.e1b286c079b87fe41da3.js" />
     </CLASSES>
     <SOURCES />
   </library>

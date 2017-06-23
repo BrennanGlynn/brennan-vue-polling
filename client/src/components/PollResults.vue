@@ -30,7 +30,7 @@
               </el-row>
             </div>
             <el-row>
-              <el-col v-if="addOption" :span="22" :offset="1">
+              <el-col v-if="addOption && loggedIn" :span="22" :offset="1">
                 <el-button class="bottom-button" size="small" @click="addOption">Add an Option</el-button>
               </el-col>
               <el-col class="footer" :span=22 :offset=1>
